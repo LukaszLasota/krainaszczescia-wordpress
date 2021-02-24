@@ -1,0 +1,41 @@
+ @import "normalize.css";
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+ @import "base/_variables.scss";
+
+@import "modules/_header+menu.scss";
+@import "modules/_about";
+@import "modules/_payment.scss";
+
+@import "modules/contact.scss";
+@import "modules/footer.scss";
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-style: $com;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.main-h2{
+    width: 100%;
+    display: flex;
+    img{
+        width: 18%;
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
