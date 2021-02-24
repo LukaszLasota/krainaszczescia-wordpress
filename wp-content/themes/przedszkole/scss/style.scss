@@ -10,6 +10,9 @@
 @import "modules/contact.scss";
 @import "modules/footer.scss";
 
+*{
+    box-sizing: border-box;
+}
 
 body{
     padding: 0;
@@ -18,9 +21,6 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-style: $com;
-}
-*{
-    box-sizing: border-box;
 }
 
 img{

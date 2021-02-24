@@ -77,7 +77,11 @@ get_header();
                 <h2 class='main-h2' title="Informacje o nas - Przedszkole Kraina Szcześcia">
                     <img src="<?php echo get_theme_file_uri('/images/oplaty/3.png'); ?>" alt="Informacje o nas - Przedszkole Kraina Szcześcia">
                 </h2>
-                <div class="payment-progressbar"></div>
+                <div class="payment-progressbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
                 <div class="payment-two-content">
                     

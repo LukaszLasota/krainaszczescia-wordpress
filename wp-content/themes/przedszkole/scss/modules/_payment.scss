@@ -85,8 +85,19 @@
 .payment-progressbar{
     border: 2px solid $violet;
     border-radius: 13px;
-    padding: 5px;
+    // padding: 5px;
     width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    span{
+        padding: 5px;
+        width: 32%;
+        
+        border-radius: 13px;
+        // &:hover{
+        //     background-color: $violet;
+        // }
+    }
 }
 
 .payment-two-content{
@@ -100,17 +111,25 @@
         width: 30%;
         padding: 10px;
         margin: 0 20px;
-        border-radius: 30px;
+        border-radius: 33px;
         background-color: #fcf3db;
         transition: 1s transform;
+        box-sizing: border-box;
         &:hover{
             transform: translateY(-50px);
+            box-shadow: inset 0px 0px 0px 10px $violet; 
         }
+        // &:hover ~ .payment-progressbar{
+        //      span{
+        //         background-color: $violet;
+        //      }
+        // }
     }
+  
     .div-header{
         background-color:  #e0d7e2;
         padding-top: 20px;
-        border-radius: 25px 25px 0 0;
+        border-radius: 26px 26px 0 0;
         text-align: left; 
         h3, p{
             color: $violet;
@@ -179,4 +198,5 @@
         padding-bottom: 40px;
     }
 }
+
 

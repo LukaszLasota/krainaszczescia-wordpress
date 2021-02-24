@@ -14,7 +14,7 @@ function przedszkole_files(){
         wp_enqueue_script('main-university-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
     wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-    wp_enqueue_script('main-university-js', get_theme_file_uri('/bundled-assets/scripts.b185b738ed8c76adb723.js'), NULL, '1.0', true);
+    wp_enqueue_script('main-university-js', get_theme_file_uri('/bundled-assets/scripts.201a8447c0e3b64891d9.js'), NULL, '1.0', true);
     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/undefined'));
     // wp_enqueue_style('university_main_styles', get_stylesheet_uri('/bundled-assets/style.css'));
     }
