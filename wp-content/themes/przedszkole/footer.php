@@ -92,9 +92,13 @@
             <p><a href="">rekrutacja</a></p>
             <p><a href="">dla rodzica</a></p>
             <p><a href="">kontakt</a></p>
+            <p class="footer-empty"></p>
+            <p class="footer-empty"></p>
         </div>
         <div class="footer-one-img">
-            <img src="<?php echo get_theme_file_uri('/images/kontakt/8.png'); ?>" alt="">
+            <a href="">
+                <img src="<?php echo get_theme_file_uri('/images/kontakt/8.png'); ?>" alt="">
+            </a>
         </div>
     </div>
 
@@ -104,20 +108,31 @@
             <img src="<?php echo get_theme_file_uri('/images/kontakt/9.png'); ?>" alt="">
         </div>
 
-        <div class="footer-one-text">
-
-        <p class="footer-one-center">17/2000660</p>
-        <p class="footer-one-center">Żłobek</p>
-        <p class="footer-one-center">MALUCHY 885 755  008</p>
-        <p class="footer-one-center"> KRASNALE 885 755  007</p>
-        <p class="footer-one-center">przedszkole</p>
-        <p class="footer-one-center">ZUCHY 885 755  008</p>
-        <p class="footer-one-center">STARSZAKI 885 755  007</p>
-        <p class="footer-one-center"></p>
-        <p class="footer-one-center">Aneta Mikosz 733 733 311 (10.00 - 18.00)</p>
-        <p class="footer-one-center"></p>
-        <p class="footer-one-center">catering 885 755 003 (nie SMS) </p>
-        <p class="footer-one-center">/ 17/ 200 06 60 (nie SMS)</p>
+        <div class="footer-one-text text-two">
+        <p class="footer-one-left"></p>
+        <p>17/2000660</p>
+        <p class="footer-one-left">Żłobek</p>
+        <p></p>
+        <p class="footer-one-left">MALUCHY </p>
+        <p>885 755  008</p>
+        <p class="footer-one-left"> KRASNALE</p>
+        <p> 885 755  007</p>
+        <p class="footer-one-left">przedszkole</p>
+        <p></p>
+        <p class="footer-one-left">ZUCHY </p>
+        <p>885 755  008</p>
+        <p class="footer-one-left">STARSZAKI </p>
+        <p>885 755  007</p>
+        <p class="footer-empty"></p>
+        <p class="footer-empty"></p>
+        <p class="footer-one-left">Aneta Mikosz </p>
+        <p>733 733 311 (10.00 - 18.00)</p>
+        <p class="footer-empty"></p>
+        <p class="footer-empty"></p>
+        <p class="footer-one-left">Catering </p>
+        <p>885 755 003 (nie SMS)</p>
+        <p class="footer-one-left"></p>
+        <p>/ 17/ 200 06 60 (nie SMS)</p>
 
         </div>
 
@@ -134,9 +149,11 @@
         </div>
 
         <div class="footer-three-content">
+            <p class="footer-empty"></p>
             <div class="footer-three-img">
                 <img src="<?php echo get_theme_file_uri('/images/kontakt/11.png'); ?>" alt="">
             </div>
+            <p class="footer-empty"></p>
             <p class="footer-three-paragraph">kontakt@krainaszczescia.edu.pl</p>
             <p class="footer-three-paragraph">biuro@krainaszczescia.edu.pl</p>
         </div>
@@ -145,6 +162,7 @@
             <div class="footer-three-img">
                 <img src="<?php echo get_theme_file_uri('/images/kontakt/12.png'); ?>" alt="">
             </div>
+            <p class="footer-empty"></p>
             <p class="footer-three-paragraph">NIP 517-006-27-29</p>
             <p class="footer-three-paragraph">REGON Przedszkole: 365313006</p>
             <p class="footer-three-paragraph">REGON Żłobek 362511929</p>

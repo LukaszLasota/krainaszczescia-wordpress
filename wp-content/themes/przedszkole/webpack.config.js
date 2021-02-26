@@ -48,7 +48,7 @@ let cssConfig = {
 }
 
 let scssConfig ={
-  test: /\.s(a|c)ss$/,
+  test:  /\.scss$/,
   use: ["style-loader", "css-loader","sass-loader"], 
 }
 
@@ -59,8 +59,8 @@ let config = {
   plugins: [],
   module: {
     rules: [
-      scssConfig,
       cssConfig,
+      scssConfig,
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
