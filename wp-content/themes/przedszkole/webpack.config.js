@@ -48,8 +48,8 @@ let cssConfig = {
 }
 
 let scssConfig ={
-  test:  /\.scss$/,
-  use: ["style-loader", "css-loader","sass-loader"], 
+  test:  /\.s(a|c)ss$/,
+  use: ["css-loader","sass-loader"], 
 }
 
 let config = {
@@ -77,7 +77,7 @@ let config = {
 
 if (currentTask == "devFast") {
   config.devtool = "source-map"
-  cssConfig.use.unshift("style-loader")
+  scssConfig.use.unshift("style-loader")
   config.output = {
     filename: "bundled.js",
     publicPath: "http://localhost:3000/"
@@ -116,7 +116,7 @@ if (currentTask == "devFast") {
 }
 
 if (currentTask == "build" || currentTask == "buildWatch") {
-  cssConfig.use.unshift(MiniCssExtractPlugin.loader)
+  scssConfig.use.unshift(MiniCssExtractPlugin.loader)
   postCSSPlugins.push(require("cssnano"))
   config.output = {
     publicPath: "/wp-content/themes/przedszkole/bundled-assets/",

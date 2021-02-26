@@ -10,8 +10,7 @@
   <body <?php body_class(); ?>>
     <header class="header">
       
-      <nav class="main-nav">
-      
+      <nav class="main-nav" >
       <div class="main-nav-links">
         <div class="main-nav-back">
             <a href="#">

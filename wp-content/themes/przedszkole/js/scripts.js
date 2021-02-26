@@ -9,3 +9,22 @@ import $ from 'jquery';
 //     // highlight the mouseenter target
 //     span.style.backgroundColor = "purple";
 // });
+// window.onload = function() {
+    
+//     // Variables
+//     var nav = document.querySelector('.fixed');
+//     var navTop = nav.offsetTop;
+        
+//      // Functions
+//     function navFixed(e) {
+//         if(window.scrollY >= 240 & $(window).width() > 800) {
+//             nav.classList.add('is-fixed');
+//         } else {
+//           nav.classList.remove('is-fixed');
+//         }
+//     }
+
+//     // Event Listener
+//     window.addEventListener('scroll', navFixed);
+    
+//   }
