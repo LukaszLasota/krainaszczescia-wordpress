@@ -113,7 +113,7 @@
         margin: 0 20px;
         border-radius: 33px;
         background-color: #fcf3db;
-        transition: 1s transform;
+        transition: 1s transform, .2s box-shadow;
         box-sizing: border-box;
         &:hover{
             transform: translateY(-50px);
@@ -172,20 +172,20 @@
         padding: 10px 20px;
         span{
             padding: 15px 10px 0 0;
-            width: 9%;
+            width: 7%;
             img{
                 width: 100%;
             }
         }
         p{
-            width: 91%;
+            width: 88%;
             font-style: $com;
             font-size: 1.2rem;
             text-align: left;
             margin: 10px 0;
         }
         .paragraf-secend-img{
-            width: 70%;
+            width: 65%;
         }
         .paragraf-second-span{
             width: 18%;

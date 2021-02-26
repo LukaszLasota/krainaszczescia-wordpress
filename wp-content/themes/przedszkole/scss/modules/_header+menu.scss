@@ -2,7 +2,7 @@
   .main-nav{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -12,40 +12,58 @@
     background-color: cadetblue;
   }
 
-  .logo{
-    margin: 15px 0 0;
-    img{
-      width: 90px;
-      padding-left: 90px;
+  .main-nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-nav-back{
+      width: 35px;
+      padding: 10px;
+    }
+    .logo{
+      padding: 0 15px;
+      img{
+        width: 150px;
+      }
     }
   }
 
   .navigation{
-    width: 70%;
+    padding: 0 10px;
+    .navigation-list{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      
+    }
+    .navigation-item{
+      list-style: none;
+      margin: 0;
+      a{
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: $white;
+        padding: 15px 25px;
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+      }
+    }
   }
 
-  .navigation-list{
+  .menu-login{
     display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    
-  }
-  .navigation-item{
-    width: 100%/8;
-    list-style: none;
-    margin: 0;
-    
-    a{
-      text-align: center;
-      text-decoration: none;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      color: black;
-      padding: 20px 15px;
-      display: flex;
-      justify-content: center;
-      font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    .login-btn{
+      width: 150px;
+    }
+    .login-avatar{
+      width: 60px;
+      padding: 5px 15px;
     }
   }
 
@@ -65,19 +83,17 @@
     width: 1px;
   }
 
-  @media (max-width: 1500px){
+  @media (max-width: 1600px){
     
-    .logo{
-      img{
-        width: 80px;
-        padding-left: 70px;
-      }
-    }
+    // .logo{
+    //   img{
+    //     width: 80px;
+    //     padding-left: 70px;
+    //   }
+    // }
 
     .navigation-item {
-      padding: 10px;
-      width: 24%;
-      box-sizing: border-box;
+     padding: 0;
     }
   }
 

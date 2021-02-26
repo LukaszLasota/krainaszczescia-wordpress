@@ -11,12 +11,21 @@
     <header class="header">
       
       <nav class="main-nav">
-        
-        <h1 class="logo" title="Przedszkole Kraina Szczęścia">
-          <a href="/">
-            <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="Strona główna Przedszkola Kraina Szczęścia">
-          </a>
-        </h1>
+      
+      <div class="main-nav-links">
+        <div class="main-nav-back">
+            <a href="#">
+              <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+            </a>
+          </div>
+
+          <h1 class="logo" title="Przedszkole Kraina Szczęścia">
+            <a href="/">
+              <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="Strona główna Przedszkola Kraina Szczęścia">
+            </a>
+          </h1>
+      </div>
+      
 
         <button class="hamburger" aria-expanded="false">
             <span class="sr-only">Otwórz/zamknij menu</span>
@@ -41,19 +50,31 @@
 
           <?php if(is_user_logged_in()) { ?>
 
-              <a href="<?php echo esc_url(site_url('/my-notes')); ?>" class="btn btn--small btn--orange float-left push-right">My notes</a>
-
-              <a href="<?php echo wp_logout_url();  ?>" class="btn btn--small  btn--dark-orange float-left btn--with-photo">
-              <span class="site-header__avatar"><?php echo get_avatar(get_current_user_id(), 60); ?></span>
-              <span class="btn__text">Log Out</span>
-              </a>
+              <div class="login-btn">
+                  <a href="<?php echo wp_logout_url();  ?>">
+                    <img src="<?php echo get_theme_file_uri('/images/menu/6.png'); ?>" alt="">
+                  </a>
+                </div>
+                <div class="login-avatar">
+                  <a href="<?php echo wp_login_url();  ?>">
+                    <img src="<?php echo get_theme_file_uri('/images/menu/4.png'); ?>" alt="">
+                  </a>
+                </div>
 
               <?php } else { ?>
+                 
+                <div class="login-btn">
+                  <a href="<?php echo wp_login_url();  ?>">
+                    <img src="<?php echo get_theme_file_uri('/images/menu/5.png'); ?>" alt="">
+                  </a>
+                </div>
+                <div class="login-avatar">
+                  <a href="<?php echo wp_login_url();  ?>">
+                    <img src="<?php echo get_theme_file_uri('/images/menu/3.png'); ?>" alt="">
+                  </a>
+                </div>
 
-                <a href="<?php echo wp_login_url();  ?>" class="btn btn--small btn--orange float-left push-right">Login</a>
-                <a href="<?php echo wp_registration_url(); ?>" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
-
-              <?php } ?>
+              <?php } ?> 
 
               </div>
 
