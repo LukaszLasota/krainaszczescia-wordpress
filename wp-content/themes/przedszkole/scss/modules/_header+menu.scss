@@ -1,3 +1,14 @@
+.nav-bg{
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  opacity: 0;
+  // transition: opacity 0.8s;
+}
 
   .main-nav{
     width: 100%;
@@ -6,11 +17,7 @@
     align-items: center;
     position: fixed;
     z-index: 100;
-    transition: background-color .8s .1s ease-in-out;
   }
-  // .main-nav-bg{
-  //   background-image: url(wp-content/themes/przedszkole/images/o-nas/3.png);
-  // }
 
   .main-nav-links{
     display: flex;

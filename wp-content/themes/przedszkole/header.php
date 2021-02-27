@@ -8,22 +8,24 @@
 
   </head>
   <body <?php body_class(); ?>>
-    <header class="header">
-      
-      <nav class="main-nav" >
-      <div class="main-nav-links">
-        <div class="main-nav-back">
-            <a href="#">
-              <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
-            </a>
-          </div>
+    <header class="header" >
+  
+      <div class="nav-bg" style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);"> </div>
 
-          <h1 class="logo" title="Przedszkole Kraina Szczęścia">
-            <a href="/">
-              <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="Strona główna Przedszkola Kraina Szczęścia">
-            </a>
-          </h1>
-      </div>
+      <nav class="main-nav">
+        <div class="main-nav-links">
+          <div class="main-nav-back">
+              <a href="#">
+                <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+              </a>
+            </div>
+
+            <h1 class="logo" title="Przedszkole Kraina Szczęścia">
+              <a href="/">
+                <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="Strona główna Przedszkola Kraina Szczęścia">
+              </a>
+            </h1>
+        </div>
       
 
         <button class="hamburger" aria-expanded="false">
@@ -35,7 +37,7 @@
         
         <div class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="#">O nas</a></li>
+                <li class="navigation-item"><a href="#two">O nas</a></li>
                 <li class="navigation-item"><a href="#">aktualności</a></li>
                 <li class="navigation-item"><a href="#">oferta</a></li>
                 <li class="navigation-item"><a href="#">opłaty</a></li>
@@ -82,7 +84,6 @@
         </div>
         
       </nav>
-
       
       <div class="header-img">
         <img src="<?php echo get_theme_file_uri('/images/header/1.png'); ?>" alt="">

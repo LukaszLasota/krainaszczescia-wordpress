@@ -2,7 +2,7 @@
 get_header();
 ?>
 <main>
-    <section class="about">
+    <section class="about" id="two">
         <div class="about-position">
       
         <div class="about-content" style="background-image: url(<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>);">
