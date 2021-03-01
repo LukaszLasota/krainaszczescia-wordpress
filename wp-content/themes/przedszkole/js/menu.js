@@ -1,8 +1,9 @@
+//Add background image with scroll//
 const menuBackground = document.querySelector('.nav-bg');
 const menu = document.querySelector('.nav-bg');
 const header= document.querySelector('.header');
 let scrollpos = window.scrollY;
-const header_height = header.offsetHeight - 380;
+const header_height = 900;
 
 const add_class_on_scroll = () => {
     menuBackground.style.opacity = 1;
@@ -22,3 +23,4 @@ window.addEventListener('scroll', function(){
         remove_class_on_scroll();
     }
 });
+

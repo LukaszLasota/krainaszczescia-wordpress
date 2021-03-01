@@ -270,3 +270,24 @@
       }
     }
   }
+
+  .header{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1200px;
+    .arrow-down-img{
+      width: 90px;
+      position: absolute;
+      top: 105%;
+      right: 60px;
+  }
+  
+  }
+
+  .header-new{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }

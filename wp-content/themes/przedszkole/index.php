@@ -20,12 +20,12 @@ get_header();
             
         </div>
     </section> 
-    <section class="payment" style="background-image: url(<?php echo get_theme_file_uri('/images/oplaty/1.png'); ?>);">
+    <section class="payment"  style="background-image: url(<?php echo get_theme_file_uri('/images/oplaty/1.png'); ?>);">
         <div class="payment-position">
             
             <div class="payment-space"></div>
             
-            <div class="payment-one">
+            <div class="payment-one" id="three">
                 <h2 class='main-h2' title="Informacje o nas - Przedszkole Kraina Szcześcia">
                     <img src="<?php echo get_theme_file_uri('/images/oplaty/2.png'); ?>" alt="Informacje o nas - Przedszkole Kraina Szcześcia">
                 </h2>
@@ -69,11 +69,20 @@ get_header();
                     </span>
                     <h4>konsultacje ze specjalistami pracującymi w „Krainie Szczęścia” w zakresie wychowania, edukacji i pomocy psychologiczno – pedagogicznej jak: pedagog, oligofrenopedagog, terapeuta autyzmu, logopeda, neurologopeda, psycholog</h4> 
                 </div>
+
+                
+
+            </div>
+
+            <div class="arrow-down-img">
+                <a href="#five">
+                <img src="<?php echo get_theme_file_uri('/images/1.png'); ?>" alt="">
+                </a>
             </div>
 
             <div class="payment-space"></div>
 
-            <div class="payment-two">
+            <div class="payment-two" id="four">
                 <h2 class='main-h2' title="Informacje o nas - Przedszkole Kraina Szcześcia">
                     <img src="<?php echo get_theme_file_uri('/images/oplaty/3.png'); ?>" alt="Informacje o nas - Przedszkole Kraina Szcześcia">
                 </h2>

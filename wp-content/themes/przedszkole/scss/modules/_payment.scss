@@ -4,6 +4,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 260vh;
+    position: relative;
+    .arrow-down-img{
+        width: 90px;
+        position: absolute;
+        top: 800px;
+        right: 60px;
+    }
 }
 .payment-position{
     width: $main-width;
@@ -18,6 +25,7 @@
 /*First part of section*/
 
 .payment-one{
+    position: relative;
     .main-h2{
         padding: 10px 0 35px 10px;
         img{

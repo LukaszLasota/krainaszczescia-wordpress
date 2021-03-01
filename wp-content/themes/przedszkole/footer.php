@@ -1,6 +1,6 @@
 
 
- <section class="contact">
+ <section class="contact" id="five">
         <h2 class='main-h2' title="Kontakt przedszkole Kraina Szczęścia">
             <img src="<?php echo get_theme_file_uri('/images/kontakt/3.png'); ?>" alt="Kontakt przedszkole Kraina Szcześcia">
         </h2>
@@ -54,12 +54,14 @@
 
                 <div class="content-one">                  
                     <div class="content-one-img">
-                        <a href="#">
+                        <a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">
                             <img src="<?php echo get_theme_file_uri('/images/kontakt/7.png'); ?>" alt="">
                         </a>                       
                     </div>
                     <div class="content-one-text">
-                        <p>Facebook</p>
+                        <a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">
+                            <p>Facebook</p>
+                        </a>  
                     </div>  
                 </div>
 
@@ -84,19 +86,19 @@
             <img class="top-first"  src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="">
         </div>
         <div class="footer-one-text">
-            <p><a href="">Dom</a></p>
-            <p><a href="">o nas</a></p>
-            <p><a href="">aktualności</a></p>
-            <p><a href="">oferta</a></p>
-            <p><a href="">opłaty</a></p>
-            <p><a href="">rekrutacja</a></p>
-            <p><a href="">dla rodzica</a></p>
-            <p><a href="">kontakt</a></p>
+            <p><a href="/">Dom</a></p>
+            <p><a href="#two">o nas</a></p>
+            <p><a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">aktualności</a></p>
+            <p><a href="#three">oferta</a></p>
+            <p><a href="#four">opłaty</a></p>
+            <p><a href="#">rekrutacja</a></p>
+            <p><a href="#">dla rodzica</a></p>
+            <p><a href="#five">kontakt</a></p>
             <p class="footer-empty"></p>
             <p class="footer-empty"></p>
         </div>
         <div class="footer-one-img">
-            <a href="">
+            <a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">
                 <img src="<?php echo get_theme_file_uri('/images/kontakt/8.png'); ?>" alt="">
             </a>
         </div>
@@ -171,7 +173,11 @@
     </div>
 
 </div>
-    
+        <div class="arrow-down-img">
+            <a href="#one">
+                <img src="<?php echo get_theme_file_uri('/images/2.png'); ?>" alt="">
+            </a>
+        </div>
 
 </footer>
 <?php wp_footer();?>
