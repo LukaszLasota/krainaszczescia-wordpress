@@ -286,8 +286,11 @@
   }
 
   .header-new{
+    width: 100%;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 400px;
+    background-size: 100%;
+    min-height: 300px;
+    position: fixed;
+    z-index: 100;
   }

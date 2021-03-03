@@ -1,0 +1,60 @@
+.about-us-wrapper{
+    width: $main-width;
+    padding: 350px 0 200px;
+    margin: auto;
+}
+
+.about-us-wrapper-one{
+    p {
+        @include paragraph($black, $com, 1.4rem, normal, 200%);
+        text-align: justify;
+        text-align-last: center;
+    };
+    .main-h2{
+        padding: 60px 0;
+    }
+}
+
+.about-us-wrapper-two{
+    width: 100%;
+    @include flex(flex, wrap);
+    padding: 200px 0 0;
+    background-position: top right;
+    background-repeat: no-repeat;
+    .main-h2-two{
+        width: 100%;
+        padding: 60px 0 120px;
+        img{
+            width: 42%;
+        }
+    }
+    .about-us-list{
+        @include flex(flex, wrap);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+        .about-us-list-img{
+            display: flex;
+            align-items: flex-start;
+            padding-top: 17px;
+            width: 30px;
+            margin-left: -40px;
+            img{
+            width: 90%;
+            }
+        }
+        .about-us-list-h4{
+            width: 85%;
+            padding: 7px 0 7px 10px;
+            margin: 0;
+            @include paragraph($black, $com, 1.4rem, normal, 180%);
+        }
+        
+    }
+    .about-us-list-width{
+        .about-us-list-h4{
+            width: 45%;
+            }    
+    }
+}

@@ -7,11 +7,9 @@
     <?php wp_head(); ?>
 
   </head>
-  <body <?php body_class(); ?>>
-    <header class="header-new" id="one" style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);">
-  
-      <!-- <div class="nav-bg" style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);"> </div> -->
-
+  <body id="one" <?php body_class(); ?>>
+    <header class="header-new"  style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);">
+    
       <nav class="main-nav">
         <div class="main-nav-links">
           <div class="main-nav-back">

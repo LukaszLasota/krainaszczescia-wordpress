@@ -1,7 +1,6 @@
 //Add background image with scroll//
 const menuBackground = document.querySelector('.nav-bg');
-const menu = document.querySelector('.nav-bg');
-const header= document.querySelector('.header');
+
 let scrollpos = window.scrollY;
 const header_height = 900;
 

@@ -1,4 +1,4 @@
-# Kraina Szcześcia Site Build on Wordpress
+# Kraina Szczęścia Site Build on Wordpress
 
 Website for kindergarten and nursery - Kraina Szczęścia. The site is under construction, progress is available at: https://przedszkole.new.krainaszczescia.edu.pl/
 
