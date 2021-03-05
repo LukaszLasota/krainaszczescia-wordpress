@@ -35,7 +35,7 @@
         
         <div class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="#two">O nas</a></li>
+                <li class="navigation-item"><a href="<?php echo site_url( '/o-nas'); ?>">O nas</a></li>
                 <li class="navigation-item"><a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">aktualności</a></li>
                 <li class="navigation-item"><a href="#three">oferta</a></li>
                 <li class="navigation-item"><a href="#four">opłaty</a></li>

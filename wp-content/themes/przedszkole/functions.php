@@ -3,7 +3,7 @@
 // require get_theme_file_path('/includes/search-route.php');
 // require get_theme_file_path('/includes/like-route.php');
 
-function przedszkole_files(){
+function kindergarten_files(){
        
     // wp_enqueue_script( 'main-przedszkole-js', get_theme_file_uri( '/js/scripts-noWebpack.js' ), array('jquery'), '1.0', true); // dodanie pliku js, nazwa, link, zaleznosć, wersja, czy ma byc w footer czy nie (moze byc w head) dodano array(jquery) poprzedni skrypt script-bundle.js
     
@@ -11,10 +11,10 @@ function przedszkole_files(){
    
 
     if(strstr($_SERVER['SERVER_NAME'], 'przedszkole.krainaszczescia.local')){
-        wp_enqueue_script('main-university-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
+        wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-university-js', get_theme_file_uri('/bundled-assets/scripts.a67e5873da36c8767250.js'), NULL, '1.0', true);
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.a67e5873da36c8767250.js'), NULL, '1.0', true);
         wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.a67e5873da36c8767250.css'));
     // wp_enqueue_style('university_main_styles', get_stylesheet_uri('/bundled-assets/style.css'));
     }
@@ -22,7 +22,7 @@ function przedszkole_files(){
     // wp_enqueue_script('main-przedszkole-js', get_theme_file_uri('/js/scripts.js'), NULL, '1.0', true);
     // wp_enqueue_style('our-main-styles', get_theme_file_uri('/css/style.css'));
     
-    wp_localize_script('main-przedszkole-js', 'przedszkoleData', array(
+    wp_localize_script('main-kindergarten-js', 'kindergartenData', array(
         'root_url'=> get_site_url(),
         'nonce'=> wp_create_nonce('wp_rest'),
     ));
@@ -30,23 +30,23 @@ function przedszkole_files(){
 
 }
 
-add_action('wp_enqueue_scripts', 'przedszkole_files');
+add_action('wp_enqueue_scripts', 'kindergarten_files');
 
 
-// function przedszkole_features(){
-//     add_theme_support('title-tag');
-//     add_theme_support('post-thumbnails');//dodanie wybranych obrazów w poście
-//     add_image_size('professorLandscape', 400, 260, true);//dodanie nowego rozmairu do obrazów
-//     add_image_size('professorPortrait', 480, 650, true);
-//     add_image_size('pageBanner', 1500, 350, true);
-// }
+function kindergarten_features(){
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');//dodanie wybranych obrazów w poście
+    // add_image_size('professorLandscape', 400, 260, true);//dodanie nowego rozmairu do obrazów
+    // add_image_size('professorPortrait', 480, 650, true);
+    // add_image_size('pageBanner', 1500, 350, true);
+}
 
-// add_action( 'after_setup_theme', 'przedszkole_features');
+add_action( 'after_setup_theme', 'kindergarten_features');
 
 
-function przedszkole_post_types(){
+function kindergarten_post_types(){
     //Nasze-atuty typ postu, Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki
-    register_post_type('nasze-atuty', array(
+    register_post_type('Nasze-atuty', array(
         'supports' => array('title'),  
         'show_in_rest' => true,
         'has_archive' => true,
@@ -59,6 +59,21 @@ function przedszkole_post_types(){
             'singular_name' => 'Atut',
         ),
         'menu_icon' => 'dashicons-heart',
+    ));
+
+    register_post_type('kariera', array(
+        'supports' => array('title', 'editor', 'thumbnail'),  
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'public'=> true,
+        'labels' => array(
+            'name'=> 'Kariera',
+            'add_new_item' => 'Dodaj nowe ogłoszenie',
+            'edit_item' => 'Edytuj ogłoszenie',
+            'all_items' => 'Wszystkie ogłoszenia',
+            'singular_name' => 'ogłoszenie',
+        ),
+        'menu_icon' => 'dashicons-businesswoman',
     ));
 
 //     //Program post type Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki
@@ -147,5 +162,5 @@ function przedszkole_post_types(){
   
 };
 
-add_action('init', 'przedszkole_post_types');
+add_action('init', 'kindergarten_post_types');
 
