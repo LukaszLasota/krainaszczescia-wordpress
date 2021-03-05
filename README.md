@@ -8,7 +8,7 @@ Website for kindergarten and nursery - Kraina Szczęścia. The site is under con
 
 - [Production-build](#Production-build)
 - [Webpack run](#Webpack-run)
-- [Technologies](#technologies)
+- [Technologies](#Technologies)
 
 ## Production build
 - install wordpress local
