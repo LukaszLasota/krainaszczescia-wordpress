@@ -1,0 +1,69 @@
+.parrents{
+    width: $main-width;
+    margin: auto;
+    padding: 350px 0 200px;
+    .main-h2{
+        img{
+            width: 40%;
+        }
+    }
+    p{
+        @include paragraph($black, $com, 1.8rem, normal, 130%);
+    }
+}
+
+.toggle-main-one, .toggle-main-two{
+    width: 100%;
+    border-color: $lightYellow;
+    border-style: solid;
+}
+
+.toggle-main-one{
+    border-width: 2px 2px 1px 2px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.toggle-main-two{
+    border-width: 1px 2px 2px 2px;
+    border-radius:  0 0 15px 15px ;
+}
+
+.toggle{
+    width: 100%;
+    background-color: $lightBrown;
+    @include paragraph($black, $com, 2.0rem, normal, 130%);
+    text-decoration: none;        
+    display: block;
+    color: $violet;
+    padding: 25px 0 25px 0;
+    transition: border-width 100ms;
+   span{
+       margin-left: 7%;
+   }
+}
+
+.toggle-one{
+    border-radius: 15px 15px 0 0 ;
+}
+
+.toggle-two{
+    border-radius:  0 0 15px 15px;
+}
+
+.toggle-border{
+    border-color: $lightYellow;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+.toggle-content {
+	display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 400ms ease-in-out;
+}
+
+.toggle-content.is-visible {
+	display: block;
+	height: auto;
+}

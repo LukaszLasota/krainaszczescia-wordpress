@@ -14,8 +14,8 @@ function kindergarten_files(){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.fea5db75a30fc1fe1bfa.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.fea5db75a30fc1fe1bfa.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.fa31e943bffa9b47791a.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.fa31e943bffa9b47791a.css'));
     // wp_enqueue_style('university_main_styles', get_stylesheet_uri('/bundled-assets/style.css'));
     }
 
@@ -67,7 +67,7 @@ function kindergarten_post_types(){
         'has_archive' => true,
         'public'=> true,
         'labels' => array(
-            'name'=> 'Kariera',
+            'name'=> 'Kariera przedszkole',
             'add_new_item' => 'Dodaj nowe ogłoszenie',
             'edit_item' => 'Edytuj ogłoszenie',
             'all_items' => 'Wszystkie ogłoszenia',

@@ -42,7 +42,7 @@
                 <li class="navigation-item"><a href="#three">oferta</a></li>
                 <li class="navigation-item"><a href="#four">opłaty</a></li>
                 <li class="navigation-item"><a href="#">rekrutacja</a></li>
-                <li class="navigation-item"><a href="#">dla rodzica</a></li>
+                <li class="navigation-item"><a href="<?php echo site_url( '/dla-rodzica'); ?>">dla rodzica</a></li>
                 <li class="navigation-item">
                   <a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></li>
                 </li>

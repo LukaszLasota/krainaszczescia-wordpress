@@ -23,14 +23,20 @@
             @include paragraph($violet, $com, 2.9rem, normal, 110%);
             z-index: 30;
             position: relative;
+            width: 70%;
         }
     }
-    
+    .career-no-recrutation{
+        h3{
+            padding: 20px 0 0px;
+            @include paragraph($black, $com, 2.9rem, normal, 110%);
+        }
+    }
     h4{
         padding: 20px 0 5px;
         margin: 0; 
         @include paragraph($violet, $com, 1.5rem, normal, 110%);
-        background: linear-gradient(to right, rgba(252,175,25,255) 0%, rgba(253,209,45,255) 100%) left bottom no-repeat; 
+        background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
         background-size: 170px 3px;
     }
     p{
