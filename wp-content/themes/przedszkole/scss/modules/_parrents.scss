@@ -37,17 +37,24 @@
     color: $violet;
     padding: 25px 0 25px 0;
     transition: border-width 100ms;
-   span{
-       margin-left: 7%;
-   }
 }
 
 .toggle-one{
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
+    &:after {
+        content: "Dla gości";
+        color: $violet;
+        margin-left: 7%;
+    }
 }
 
 .toggle-two{
     border-radius:  0 0 15px 15px;
+    &:after {
+        content: "Dla rodziców";
+        color: $violet;
+        margin-left: 7%;
+    }
 }
 
 .toggle-border{
@@ -61,9 +68,18 @@
 	height: 0;
 	overflow: hidden;
 	transition: height 400ms ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    .pdf{
+        display: block;
+        padding: 15px;
+        width: 25%;
+        background-color: blueviolet;
+    }
 }
 
 .toggle-content.is-visible {
 	display: block;
 	height: auto;
 }
+

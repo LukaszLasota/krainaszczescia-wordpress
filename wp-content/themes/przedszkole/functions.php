@@ -14,8 +14,8 @@ function kindergarten_files(){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.fa31e943bffa9b47791a.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.fa31e943bffa9b47791a.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.061739a07909943fb0be.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.061739a07909943fb0be.css'));
     // wp_enqueue_style('university_main_styles', get_stylesheet_uri('/bundled-assets/style.css'));
     }
 
@@ -74,6 +74,21 @@ function kindergarten_post_types(){
             'singular_name' => 'ogłoszenie',
         ),
         'menu_icon' => 'dashicons-businesswoman',
+    ));
+
+    register_post_type('pdf-goście', array(
+        'supports' => array('title'),  
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'public'=> true,
+        'labels' => array(
+            'name'=> 'PDF dla gości',
+            'add_new_item' => 'Dodaj nowy pdf',
+            'edit_item' => 'Edytuj pdf',
+            'all_items' => 'Wszystkie pdfy',
+            'singular_name' => 'pdf',
+        ),
+        'menu_icon' => 'dashicons-pdf',
     ));
 
 //     //Program post type Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki

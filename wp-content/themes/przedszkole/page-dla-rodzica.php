@@ -8,17 +8,8 @@
     </h2>
     <p><?php the_content(); ?></p>
 
-
-    <!-- <div class="toggle">
-        <h3 class="collapse-head">Dla rodziców</h3>
-        <div class="toggle-content"  id="example">
-            <p>gfwhgre wedw</p>
-            <p>fwfe ef ewg ew gweg</p>
-        </div>
-	</div> -->
-
     <div class="toggle-main toggle-main-one">
-        <a class="toggle toggle-one" href="#example"><span>Dla rodziców</span></a>
+        <a class="toggle toggle-one" href="#example"></a>
     
         <div class="toggle-content toggle-content-one" id="example">
         <p>Here's some text we want to toggle visibility of.</p>
@@ -31,16 +22,29 @@
 
     <div class="toggle-main toggle-main-two">
         
-        <a class="toggle toggle-two" href="#exampleOne"><span>Dla gości</span></a>
+        <a class="toggle toggle-two" href="#exampleOne"></a>
         
         <div class="toggle-content" id="exampleOne">
-        <p>Here's some text we want to toggle visibility of.</p>
-        <p>Here's some text we want to toggle visibility of.</p>
-        <p>Here's some text we want to toggle visibility of.</p>
-        <p>Here's some text we want to toggle visibility of.</p>
+        <?php 
+                $gestPDf = new WP_Query(array(
+                'posts_per_page' => -1,
+                'post_type' => 'pdf-goście',
+                'meta_key' => 'pdf-goście',
+                'order' => 'ASC',
+                ));
+                while($gestPDf->have_posts()){
+                      $gestPDf->the_post(); 
+
+                $file = get_field('pdf-goscie');
+                if( $file ): ?>
+                    <a class="pdf" href="<?php echo $file['url']; ?>"><?php the_title(); ?></a>
+                    <!-- echo $file['filename']; -->
+                <?php endif; } ?>
         </div>
 
     </div>
+
+ 
 
 </section>
 </main>
