@@ -25,7 +25,9 @@
         <a class="toggle toggle-two" href="#exampleOne"></a>
         
         <div class="toggle-content" id="exampleOne">
-        <?php 
+
+        <div class="toggle-body">
+            <?php 
                 $gestPDf = new WP_Query(array(
                 'posts_per_page' => -1,
                 'post_type' => 'pdf-goście',
@@ -37,9 +39,20 @@
 
                 $file = get_field('pdf-goscie');
                 if( $file ): ?>
-                    <a class="pdf" href="<?php echo $file['url']; ?>"><?php the_title(); ?></a>
+                    <div class="pdf-body">
+                        <a class="pdf-link" href="<?php echo $file['url']; ?>">
+                            <div class="pdf-image"></div>
+                            <!-- <img class="pdf-image" src="<?php echo get_theme_file_uri('/images/rodzice/2.png'); ?>" alt="pdf"> -->
+                            <p class="pdf-title"><?php the_title(); ?></p>
+                        </a>
+                    </div>
+                   
                     <!-- echo $file['filename']; -->
-                <?php endif; } ?>
+            <?php endif; } ?>
+        </div>
+       
+
+
         </div>
 
     </div>

@@ -62,6 +62,18 @@ let config = {
       cssConfig,
       scssConfig,
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'image',
+              // name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
