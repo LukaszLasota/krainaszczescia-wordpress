@@ -76,7 +76,7 @@ function kindergarten_post_types(){
         'menu_icon' => 'dashicons-businesswoman',
     ));
 
-    register_post_type('pdf-goście', array(
+    register_post_type('pdf-goscie', array(
         'supports' => array('title'),  
         'show_in_rest' => true,
         'has_archive' => true,
@@ -89,6 +89,19 @@ function kindergarten_post_types(){
             'singular_name' => 'pdf',
         ),
         'menu_icon' => 'dashicons-pdf',
+    ));
+    register_post_type('pdf-rodzice', array(
+        'supports' => array('title'),
+        'public' => false,
+        'show_ui'=> true,//Show in admin dashboard
+        'labels' => array(
+            'name' => 'PDF dla rodziców',
+            'add_new_item' => 'Dodaj nowy pdf',
+            'edit_item' => 'Edytuj pdf',
+            'all_items' => 'Wszystkie pdfy',
+            'singular_name' => 'pdf',
+        ),
+        'menu_icon' => 'dashicons-pdf'
     ));
 
 //     //Program post type Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki

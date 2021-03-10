@@ -12,10 +12,29 @@
         <a class="toggle toggle-one" href="#example"></a>
     
         <div class="toggle-content toggle-content-one" id="example">
-        <p>Here's some text we want to toggle visibility of.</p>
-        <p>Here's some text we want to toggle visibility of.</p>
-        <p>Here's some text we want to toggle visibility of.</p>
-        <p>Here's some text we want to toggle visibility of.</p>
+        <div class="toggle-body">
+        <?php 
+                $parrentPDF = new WP_Query(array(
+                'posts_per_page' => -1,
+                'post_type' => 'pdf-rodzice',
+                'meta_key' => 'pdf-rodzice',
+                'order' => 'ASC',
+                ));
+                while($parrentPDF->have_posts()){
+                      $parrentPDF->the_post(); 
+
+                $fileParrent = get_field('pdf-rodzice');
+                $urlParrent = $fileParrent['url'];
+
+                if( $fileParrent): ?>
+                    <div class="pdf-body">
+                        <a class="pdf-link" href="<?php echo esc_attr($urlParrent); ?>" target="_blank">
+                            <div class="pdf-image"></div>
+                            <p class="pdf-title"><?php the_title(); ?></p>
+                        </a>
+                    </div>
+            <?php endif; } ?>    
+        </div>
         </div>
 
     </div>
@@ -30,24 +49,23 @@
             <?php 
                 $gestPDf = new WP_Query(array(
                 'posts_per_page' => -1,
-                'post_type' => 'pdf-goście',
-                'meta_key' => 'pdf-goście',
+                'post_type' => 'pdf-goscie',
+                'meta_key' => 'pdf-goscie',
                 'order' => 'ASC',
                 ));
                 while($gestPDf->have_posts()){
                       $gestPDf->the_post(); 
 
                 $file = get_field('pdf-goscie');
+                $url = $file['url'];
+
                 if( $file ): ?>
                     <div class="pdf-body">
-                        <a class="pdf-link" href="<?php echo $file['url']; ?>">
+                        <a class="pdf-link" href="<?php echo esc_attr($url); ?>" target="_blank">
                             <div class="pdf-image"></div>
-                            <!-- <img class="pdf-image" src="<?php echo get_theme_file_uri('/images/rodzice/2.png'); ?>" alt="pdf"> -->
                             <p class="pdf-title"><?php the_title(); ?></p>
                         </a>
                     </div>
-                   
-                    <!-- echo $file['filename']; -->
             <?php endif; } ?>
         </div>
        
