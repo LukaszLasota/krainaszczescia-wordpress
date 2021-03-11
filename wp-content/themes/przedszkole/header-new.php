@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <div class="main-nav-links">
           <div class="main-nav-back">
-              <a href="#">
+              <a href="<?php get_site_url(); ?>">
                 <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
               </a>
             </div>
@@ -39,8 +39,8 @@
                 <li class="navigation-item">
                   <a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">aktualności</a>
                 </li>
-                <li class="navigation-item"><a href="#three">oferta</a></li>
-                <li class="navigation-item"><a href="#four">opłaty</a></li>
+                <li class="navigation-item"><a href="/#three">oferta</a></li>
+                <li class="navigation-item"><a href="/#four">opłaty</a></li>
                 <li class="navigation-item"><a href="#">rekrutacja</a></li>
                 <li class="navigation-item"><a href="<?php echo site_url( '/dla-rodzica'); ?>">dla rodzica</a></li>
                 <li class="navigation-item">

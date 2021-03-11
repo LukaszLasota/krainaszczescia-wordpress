@@ -2,8 +2,8 @@
 get_header();
 ?>
 <main>
-    <section class="about" id="two">
-        <div class="about-position">
+    <section class="about" >
+        <div class="about-position" id="two" >
       
         <div class="about-content" style="background-image: url(<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>);">
             <h2 class='main-h2' title="Informacje o nas - Przedszkole Kraina Szcześcia">

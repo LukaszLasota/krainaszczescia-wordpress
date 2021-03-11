@@ -70,15 +70,15 @@ document.addEventListener('click', function (event) {
 
 }, false);
 
-const toggleMainOne = document.querySelector('.toggle-main-one');
-const toggleMainTwo = document.querySelector('.toggle-main-two');
+const toggleMainOne = document.querySelector('.toggle-one');
+const toggleMainTwo = document.querySelector('.toggle-two');
 
 toggleMainOne.addEventListener('click', function(){
-  document.querySelector('.toggle-one').classList.toggle('toggle-border');
+	toggleMainOne.classList.toggle('toggle-border');
 });
 
 toggleMainTwo.addEventListener('click', function(){
-  document.querySelector('.toggle-two').classList.toggle('toggle-border');
+	toggleMainTwo.classList.toggle('toggle-border');
 })
 
 

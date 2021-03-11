@@ -15,7 +15,7 @@
       <nav class="main-nav">
         <div class="main-nav-links">
           <div class="main-nav-back">
-              <a href="#">
+              <a href="<?php get_site_url(); ?>">
                 <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
               </a>
             </div>

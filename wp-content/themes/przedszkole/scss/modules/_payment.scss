@@ -26,6 +26,7 @@
 
 .payment-one{
     position: relative;
+    scroll-margin-top: $scroll-margin-top;
     .main-h2{
         padding: 10px 0 35px 10px;
         img{
@@ -82,6 +83,7 @@
 
 /*Second part of section*/
 .payment-two{
+    scroll-margin-top: $scroll-margin-top;
     .main-h2{
         padding: 10px 0 50px 10px;
         img{

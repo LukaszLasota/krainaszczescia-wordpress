@@ -13,7 +13,8 @@
     
         <div class="toggle-content toggle-content-one" id="example">
         <div class="toggle-body">
-        <?php 
+
+        <?php if(is_user_logged_in()) {
                 $parrentPDF = new WP_Query(array(
                 'posts_per_page' => -1,
                 'post_type' => 'pdf-rodzice',
@@ -33,7 +34,10 @@
                             <p class="pdf-title"><?php the_title(); ?></p>
                         </a>
                     </div>
-            <?php endif; } ?>    
+                <?php endif; } 
+        } else { ?>
+            <p>Aby zobaczyś zawartość musisz sie zalogować</p>
+        <?php }  ?>  
         </div>
         </div>
 

@@ -1,12 +1,14 @@
 .about{
     width: 100%;
     padding: 200px 0 50px;
+    
 }
 .about-position{
     width: $main-width;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    scroll-margin-top: $scroll-margin-top;
 }
 .about-content{
     width: 100%;
