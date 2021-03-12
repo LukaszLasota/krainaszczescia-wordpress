@@ -41,12 +41,12 @@
                 </li>
                 <li class="navigation-item"><a href="/#three">oferta</a></li>
                 <li class="navigation-item"><a href="/#four">opłaty</a></li>
-                <li class="navigation-item"><a href="#">rekrutacja</a></li>
+                <li class="navigation-item"><a href="/#five">rekrutacja</a></li>
                 <li class="navigation-item"><a href="<?php echo site_url( '/dla-rodzica'); ?>">dla rodzica</a></li>
                 <li class="navigation-item">
                   <a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></li>
                 </li>
-                <li class="navigation-item"><a href="#five">kontakt</a></li>
+                <li class="navigation-item"><a href="#six">kontakt</a></li>
             </ul>
           </div>
           <div class="menu-login">

@@ -1,0 +1,66 @@
+.recruitment{
+    // width: $main-width;
+    // margin: auto;
+    scroll-margin-top: $scroll-margin-top;
+    padding: 150px 0 150px;
+    .main-h2{
+        padding: 10px 0 35px 10px;
+        img{
+            width: 35%;
+        }
+    }
+}
+
+.contact-form .wpcf7{
+    width: 100%;
+    background-color: rgb(181, 181, 194);
+    display: flex;
+    flex-wrap: wrap;
+    #left​ {
+        width: 47%;
+        // float: left;
+        margin-right:6%;
+    }
+     
+    #right​ {
+        width: 47%;
+        // float: left;
+    }
+     
+    // .clearfix:after {
+    //     content:"\0020";
+    //     display:block;
+    //     height:0;
+    //     clear:both;
+    //     visibility:hidden;
+    //     overflow:hidden;
+    //     margin-bottom:10px;
+    // }
+     
+    // .clearfix {
+    //     display:block;
+    // }
+
+}
+
+// .wpcf7 input[type="text"],
+// .wpcf7 input[type="email"]
+// {
+//     background-color: #fff;
+//     color: #000;
+//     width: 50%;
+// }
+
+// .label{
+//     color: #000;
+//     width: 100%;
+// }
+
+// .wpcf7 {
+//     width: 100%;
+   
+//     // border: 5px solid #666666;
+//     p{
+//         width: 100%;
+//     }
+

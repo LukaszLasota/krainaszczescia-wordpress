@@ -3,7 +3,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 260vh;
+    min-height: 2800px;
     position: relative;
     .arrow-down-img{
         width: 90px;
@@ -13,8 +13,8 @@
     }
 }
 .payment-position{
-    width: $main-width;
-    margin: auto; 
+    // width: $main-width;
+    // margin: auto; 
     height: 300px;
 }
 .payment-space{

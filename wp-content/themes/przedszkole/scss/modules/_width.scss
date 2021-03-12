@@ -1,0 +1,50 @@
+.about-us-wrapper, .about-position, .career, .recruitment, .site-footer, .parrents, .payment-position{
+    width: $main-width;
+    margin: auto;
+}
+
+@media (max-width: 1600px) {
+    .about-us-wrapper, .about-position, .career, .recruitment, .site-footer, .parrents, .payment-position{
+        width: $main-width-medium;
+        margin: auto;
+    }
+  }
+
+@media (max-width: 1200px) {
+    .about-us-wrapper, .about-position, .career, .recruitment, .site-footer, .parrents, .payment-position{
+        width: $main-width-small;
+        margin: auto;
+    }
+  }
+
+
+
+// .about-position{
+//     width: $main-width;
+//     margin: auto;
+// }
+
+// .career{
+//     width: $main-width;
+//     margin: auto;
+// }
+
+// .recruitment{
+//     width: $main-width;
+//     margin: auto;
+// }
+
+// .site-footer{
+//     width: $main-width;
+//     margin: 0 auto;
+// }
+
+// .parrents{
+//     width: $main-width;
+//     margin: auto;
+// }
+
+// .payment-position{
+//     width: $main-width;
+//     margin: auto; 
+// }

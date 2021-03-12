@@ -4,10 +4,12 @@
  @import "base/_variables.scss";
  @import "base/_mixins.scss";
  @import "base/_main-style";
+ @import "modules/_width.scss";
 
 @import "modules/_header+menu.scss";
 @import "modules/_about";
 @import "modules/_payment.scss";
+@import "modules/_recruitment.scss";
 
 @import "modules/_contact.scss";
 @import "modules/_footer.scss";

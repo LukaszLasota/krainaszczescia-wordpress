@@ -9,4 +9,15 @@ $lightYellow: rgba(252,175,25,255);
 $darkYellow: rgba(253,209,45,255);
 
 $main-width: 65%;
+$main-width-medium: 85%;
+$main-width-small: 95%;
+
 $scroll-margin-top: 350px;
+
+// @media (max-width: 1025px){
+//     $main-width: 95%;
+// } 
+
+// @media (max-width: 1600px){
+//     $main-width: 85%;
+// } 

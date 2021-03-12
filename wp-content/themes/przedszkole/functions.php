@@ -14,8 +14,8 @@ function kindergarten_files(){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.debd97ca1fac707dd83b.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.debd97ca1fac707dd83b.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.8929176079b4e617413b.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.8929176079b4e617413b.css'));
     // wp_enqueue_style('university_main_styles', get_stylesheet_uri('/bundled-assets/style.css'));
     }
 
@@ -192,3 +192,9 @@ function kindergarten_post_types(){
 
 add_action('init', 'kindergarten_post_types');
 
+// add_filter( 'wpcf7_form_elements', 'delicious_wpcf7_form_elements' );
+ 
+// function delicious_wpcf7_form_elements( $form ) {
+// $form = do_shortcode( $form );
+// return $form;
+// }
