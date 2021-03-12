@@ -1,17 +1,17 @@
-.about-us-wrapper, .about-position, .career, .recruitment, .site-footer, .parrents, .payment-position{
+.about-us-wrapper, .about-position, .career, .recruitment-position, .site-footer, .parrents, .payment-position{
     width: $main-width;
     margin: auto;
 }
 
 @media (max-width: 1600px) {
-    .about-us-wrapper, .about-position, .career, .recruitment, .site-footer, .parrents, .payment-position{
+    .about-us-wrapper, .about-position, .career, .recruitment-position, .site-footer, .parrents, .payment-position{
         width: $main-width-medium;
         margin: auto;
     }
   }
 
 @media (max-width: 1200px) {
-    .about-us-wrapper, .about-position, .career, .recruitment, .site-footer, .parrents, .payment-position{
+    .about-us-wrapper, .about-position, .career, .recruitment-position, .site-footer, .parrents, .payment-position{
         width: $main-width-small;
         margin: auto;
     }

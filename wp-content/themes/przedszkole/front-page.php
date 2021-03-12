@@ -220,46 +220,34 @@ get_header();
             <h2 class='main-h2' title="Rekrutacja - Przedszkole Kraina Szcześcia">
                 <img src="<?php echo get_theme_file_uri('/images/rekrutacja/1.png'); ?>" alt="Rekrutacja - Przedszkole Kraina Szcześcia">
             </h2>
-
+            <div class="arrow-down-img">
+            <a href="#six">
+            <img src="<?php echo get_theme_file_uri('/images/1.png'); ?>" alt="">
+            </a>
+            </div>
+            <div class="contact-form"><?php echo do_shortcode('[contact-form-7 id="76" title="Formularz zgłoszeniowy do przedszkola"]'); ?>
+            </div>
         </div>
-        <div class="contact-form"><?php echo do_shortcode('[contact-form-7 id="77" title="New przedszkole"]'); ?></div>
         
-       
-            
-           
-            <!-- <div class="clerfix">
-                <div id="left">
-                    <label> Your name
-                    [text* your-name] </label>
-                    <label> Your email
-                    [email* your-email] </label>
-                </div>
-                <div id="right">
-                    <label> Subject
-                    [text* your-subject] </label>
-
-                    <label> Your message (optional)
-                    [textarea your-message] </label>
-                </div>
-            </div> -->
-
-
-            <!-- <p class="recruitment-form-one">
+        
+          
+        <!-- <div class="center">
+            <div class="recruitment-form-one">
                 <h3 class="recruitment-form-h3">Dane rodziców / opiekunów prawnych </h3>
-                <p class="recruitment-form-one-column">
+                <div class="recruitment-form-one-column">
                     
                     <label > Imię i nazwisko matki/opiekuna prawnego [text text-687]</label>
 
-                    <label > Data urodzenia [text text-688]</label>
+                    <label> Data urodzenia [text text-688]</label>
                     
-                    <label > Numer Telefonu [text text-692]</label>
+                    <label> Numer Telefonu [text text-692]</label>
 
-                    <label > Numer telefonu do pracy: [text text-689]</label>
+                    <label> Numer telefonu do pracy: [text text-689]</label>
 
-                    <label > adres e-mail: [email email-607]</label>
+                    <label> adres e-mail: [email email-607]</label>
 
-                </p>
-                <p class="recruitment-form-one-column">
+                </div>
+                <div class="recruitment-form-one-column">
 
                     <label > Imię i nazwisko ojca/opiekuna prawnego [text text-693]</label>
 
@@ -271,9 +259,10 @@ get_header();
 
                     <label > adres e-mail: [email email-608]</label>
 
-                </p>
-            </p>
-            <p class="recruitment-form-two">
+                </div>
+                
+            </div>
+            <div class="recruitment-form-two">
                 <h3 class="recruitment-form-h3">Dane dziecka</h3>
                 <label> Imię i nazwisko<span style="color: red">*</span>: [text* text-682] </label>
 
@@ -287,15 +276,17 @@ get_header();
                 
                 <label> Adres zamieszkania <span style="color: red">*</span>: [text* text-685]</label>
                 
-                
                 <label> Adres e-mail osoby zgłaszającej <span style="color: red">*</span>:[email* email-606]</label>
-            </p> -->
-
+            </div>
+        </div> -->
         
-
+            <!-- <img src="<?php echo get_theme_file_uri('/images/rekrutacja/2.png'); ?>" alt=""> -->
 
     </section>
-
+        
+        <!-- <div class="btn-area">
+            
+        </div> -->
    
 <?php
 get_footer();

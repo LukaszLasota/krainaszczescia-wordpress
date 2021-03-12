@@ -1,6 +1,7 @@
 .recruitment{
-    // width: $main-width;
+    width: 100%;
     // margin: auto;
+    position: relative;
     scroll-margin-top: $scroll-margin-top;
     padding: 150px 0 150px;
     .main-h2{
@@ -9,23 +10,92 @@
             width: 35%;
         }
     }
+    .arrow-down-img{
+        width: 90px;
+        position: absolute;
+        top: 600px;
+        right: 60px;
+    }
 }
 
-.contact-form .wpcf7{
+.wpcf7 .center{
     width: 100%;
-    background-color: rgb(181, 181, 194);
-    display: flex;
-    flex-wrap: wrap;
-    #left​ {
-        width: 47%;
-        // float: left;
-        margin-right:6%;
+    align-items: flex-start;
+    @include flex(flex, wrap);
+    .recruitment-form-h3{
+        width: 100%;
+        text-align: center;
+        span{
+        @include paragraph($black, $com, 1.3rem, normal, 110%);
+        text-transform: uppercase;
+        background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) center bottom no-repeat; 
+        background-size: 100% 3px;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        }
+        
     }
-     
-    #right​ {
-        width: 47%;
-        // float: left;
+    .recruitment-form-one{
+        width: 66%;   
+        @include flex(flex, wrap); 
+    .recruitment-form-one-column{
+        @include flex(flex, wrap);
+        width: 50%;
     }
+    }
+    .recruitment-form-two{
+        width: 33%;
+        @include flex(flex, wrap);
+    }
+    label{
+        width: 100%;
+        padding: 20px 0;
+        @include paragraph($black, $com, 0.9rem, normal, 120%);
+        text-transform: uppercase;
+    } 
+    input[type="text"], input[type="email"], input[type="date"], select{
+        border: 1px solid $lightYellow;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    input[type="text"], input[type="email"]{
+        width: 80%;
+    }  
+    input[type="date"]{
+        width: 115%;
+    }  
+    select{
+        width: 97%;
+    } 
+    .btn-area{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 60px;
+    }
+    input[type="submit"]{
+        background-image: url('./../images/rekrutacja/3.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 35px 70px;
+        text-indent:-9999px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        z-index: 10;
+        position: relative;
+        transition: all 2s ease-in-out;
+        &:hover{
+        background-image: url('./../images/rekrutacja/4.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+
+    }
+}
      
     // .clearfix:after {
     //     content:"\0020";
@@ -41,7 +111,7 @@
     //     display:block;
     // }
 
-}
+
 
 // .wpcf7 input[type="text"],
 // .wpcf7 input[type="email"]
