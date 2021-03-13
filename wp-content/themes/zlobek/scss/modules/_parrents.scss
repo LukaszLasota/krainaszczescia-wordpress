@@ -1,0 +1,117 @@
+.parrents{
+    // width: $main-width;
+    // margin: auto;
+    padding: 350px 0 200px;
+    .main-h2{
+        img{
+            width: 40%;
+        }
+    }
+    p{
+        @include paragraph($black, $com, 1.8rem, normal, 130%);
+    }
+    
+}
+
+.toggle-main-one, .toggle-main-two{
+    width: 100%;
+    border-color: $lightYellow;
+    border-style: solid;
+}
+
+.toggle-main-one{
+    border-width: 2px 2px 1px 2px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.toggle-main-two{
+    border-width: 1px 2px 2px 2px;
+    border-radius:  0 0 15px 15px ;
+}
+
+.toggle{
+    width: 100%;
+    background-color: $lightBrown;
+    @include paragraph($black, $com, 2.0rem, normal, 130%);
+    text-decoration: none;        
+    display: block;
+    color: $violet;
+    padding: 25px 0 25px 0;
+    transition: border-width 100ms;
+}
+
+.toggle-one{
+    border-radius: 15px 15px 0 0;
+    &:after {
+        content: "Dla gości";
+        color: $violet;
+        margin-left: 7%;
+    }
+}
+
+.toggle-two{
+    border-radius:  0 0 15px 15px;
+    &:after {
+        content: "Dla rodziców";
+        color: $violet;
+        margin-left: 7%;
+    }
+}
+
+.toggle-border{
+    border-color: $lightYellow;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+.toggle-content {
+	display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 400ms ease-in-out;
+}
+
+.toggle-body{
+    display: flex;
+    flex-wrap: wrap;
+    .pdf-body{
+        width: 25%;
+        // display: flex;        
+    }
+    .pdf-link{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0px;
+        margin: 0;
+        width: 100%;
+        text-decoration: none;
+    }
+    .pdf-image{
+        width: 50%;
+        margin: 0 auto;
+        height: 250px;
+        background-image: url('./../images/rodzice/2.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition:  background-image 1s;
+        &:hover{
+            background-image: url('./../images/rodzice/3.png');
+        }
+       
+    }
+    .pdf-title{
+        width: 100%;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        @include paragraph($black, $com, 1.3rem, normal, 110%);
+    }
+}
+
+
+.toggle-content.is-visible {
+	display: block;
+	height: auto;
+}
+

@@ -1,0 +1,71 @@
+.contact{
+    scroll-margin-top: $scroll-margin-top;
+    padding: 0;
+    margin: 0;
+    .main-h2{
+        justify-content: center;
+        padding: 50px 0;
+    }
+    .contact-main{
+        width: 100%;
+        position: relative;
+    }
+    .contact-one{
+        width: 50%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .contact-one-img{
+            position: absolute;
+            top: 0;
+        }
+        .content{
+            width: 55%;
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 13%;
+        }
+        .content-one{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+            h4{
+                text-transform: uppercase;
+                margin: 7px 0 3px;
+                color: $violet;
+                font-size: 1.2rem;
+                font-style: $com;
+                font-weight: 400;
+            }
+            .content-one-img{
+                width: 15%;
+                img{
+                    width: 40%;
+                }
+            }
+            .content-one-text{
+                width: 85%;
+                p{
+                    margin: 0 0 7px 20px;
+                    color: $white;
+                    font-size: 1.1rem;
+                    font-style: $com;
+                    font-weight: 300;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+   
+}

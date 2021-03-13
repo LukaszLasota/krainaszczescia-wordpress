@@ -1,0 +1,19 @@
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+ 
+ @import "base/_variables.scss";
+ @import "base/_mixins.scss";
+ @import "base/_main-style";
+ @import "modules/_width.scss";
+
+@import "modules/_header+menu.scss";
+@import "modules/_about";
+@import "modules/_payment.scss";
+@import "modules/_recruitment.scss";
+
+@import "modules/_contact.scss";
+@import "modules/_footer.scss";
+@import "modules/_about-us-subpage.scss";
+@import "modules/_career.scss";
+@import "modules/_parrents.scss";
+

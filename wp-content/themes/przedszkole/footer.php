@@ -1,6 +1,6 @@
 
 
- <section class="contact" id="six">
+ <!-- <section class="contact" id="six">
         <h2 class='main-h2' title="Kontakt przedszkole Kraina Szczęścia">
             <img src="<?php echo get_theme_file_uri('/images/kontakt/3.png'); ?>" alt="Kontakt przedszkole Kraina Szcześcia">
         </h2>
@@ -71,9 +71,11 @@
         
     </div>
 </section>
-</main>	
+</main>	 -->
 
-<footer class="footer">
+
+
+<!-- <footer class="footer">
     
 <div class="footer-img">
         <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">
@@ -179,8 +181,12 @@
             </a>
         </div>
 
-</footer>
-<?php wp_footer();?>
+</footer> -->
+<?php 
+showContact();
+showFooter();
+wp_footer();
+?>
 </body>
 </html>
 

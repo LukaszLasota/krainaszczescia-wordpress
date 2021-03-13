@@ -10,6 +10,7 @@ get_header();
                 <img src="<?php echo get_theme_file_uri('/images/o-nas/1.png'); ?>" alt="Informacje o nas - Przedszkole Kraina Szcześcia">
             </h2>
             <div class="about-text">
+            <div class="about-image-div"></div>
                 <p>Przedszkole „Kraina Szczęścia” jest przyjaznym miejscem dla dzieci i ich rodzin. Działania prowadzone przez zatrudnionych nauczycieli i specjalistów ukierunkowane są na rozbudzanie ciekawości świata, zdobywanie wiedzy i kształtowania nowych umiejętności dzieci niezbędnych do podjęcia nauki w szkole, odkrywania i rozwijania naturalnych talentów a także samodzielności. Rozumiemy przez to wysokie standardy pracy z dziećmi, współpracę z rodzicami, współpracę ze specjalistami również z innych placówek, a także podnoszenie kwalifikacji i rozwój pracowników przedszkola.Głównym założeniem naszej placówki jest wspieranie harmonijnego i wszechstronnego rozwoju każdego dziecka, również ze specjalnymi potrzebami edukacyjnymi, zgodnie z jego możliwościami, zainteresowaniami i wrodzonym potencjałem. Wsparcie to realizujemy w trakcie...</p>
                
             </div>
@@ -20,7 +21,7 @@ get_header();
             
         </div>
     </section> 
-    <section class="payment"  style="background-image: url(<?php echo get_theme_file_uri('/images/oplaty/1.png'); ?>);">
+    <!-- <section class="payment"  style="background-image: url(<?php echo get_theme_file_uri('/images/oplaty/1.png'); ?>);">
         <div class="payment-position">
             
             <div class="payment-space"></div>
@@ -72,12 +73,6 @@ get_header();
 
                 
 
-            </div>
-
-            <div class="arrow-down-img">
-                <a href="#five">
-                <img src="<?php echo get_theme_file_uri('/images/1.png'); ?>" alt="">
-                </a>
             </div>
 
             <div class="payment-space"></div>
@@ -213,21 +208,25 @@ get_header();
 
         </div>
         
-    </section>
+    </section> -->
     
-    <section class="recruitment" id="five">
+    <?php
+
+    showPayment();
+    showRecruitment();   
+    ?>
+    <!-- <section class="recruitment" id="five">
         <div class="recruitment-position">
             <h2 class='main-h2' title="Rekrutacja - Przedszkole Kraina Szcześcia">
                 <img src="<?php echo get_theme_file_uri('/images/rekrutacja/1.png'); ?>" alt="Rekrutacja - Przedszkole Kraina Szcześcia">
             </h2>
-            <div class="arrow-down-img">
-            <a href="#six">
-            <img src="<?php echo get_theme_file_uri('/images/1.png'); ?>" alt="">
-            </a>
-            </div>
+            
             <div class="contact-form"><?php echo do_shortcode('[contact-form-7 id="76" title="Formularz zgłoszeniowy do przedszkola"]'); ?>
             </div>
-        </div>
+            <div class="recruitment-image">
+                <img src="<?php echo get_theme_file_uri('/images/rekrutacja/2.png'); ?>" alt="">
+            </div>
+        </div> -->
         
         
           
@@ -282,7 +281,7 @@ get_header();
         
             <!-- <img src="<?php echo get_theme_file_uri('/images/rekrutacja/2.png'); ?>" alt=""> -->
 
-    </section>
+    <!-- </section> -->
         
         <!-- <div class="btn-area">
             
