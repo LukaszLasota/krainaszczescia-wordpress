@@ -35,7 +35,8 @@ npm run build
 
 Project is created with:
 
-- Wordpress 
+- Wordpress
+- PHP 
 - Webpack 4
 - HTML 5
 - CSS 3
