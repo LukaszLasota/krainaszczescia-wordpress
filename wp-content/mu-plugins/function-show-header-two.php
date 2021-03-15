@@ -58,7 +58,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
 
             <div class="login-btn">
                 <a href="<?php echo wp_logout_url();  ?>">
-                  <img src="<?php echo get_theme_file_uri('/images/menu/6.png'); ?>" alt="">
+                  <img src="<?php echo get_theme_file_uri('/images/menu/5.png'); ?>" alt="">
                 </a>
               </div>
               <div class="login-avatar">
@@ -71,7 +71,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
                
               <div class="login-btn">
                 <a href="<?php echo wp_login_url();  ?>">
-                  <img src="<?php echo get_theme_file_uri('/images/menu/5.png'); ?>" alt="">
+                  <img src="<?php echo get_theme_file_uri('/images/menu/6.png'); ?>" alt="">
                 </a>
               </div>
               <div class="login-avatar">
@@ -94,6 +94,4 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
    
   </header>
 
-    <?php
-
-}
+<?php }

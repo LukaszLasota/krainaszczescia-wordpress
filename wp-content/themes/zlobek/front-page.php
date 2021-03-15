@@ -1,7 +1,13 @@
 <?php
+
 get_header();
+
 showAbout();
+
 showPayment();
-showRecruitment();   
+
+showRecruitment();
+
 get_footer();
+
 ?>

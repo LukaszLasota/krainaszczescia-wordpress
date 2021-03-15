@@ -4,6 +4,7 @@ wp-content/themes/twentytwentyone
 
 ### ignore node dependency directories ###
 wp-content/themes/przedszkole/node_modules/
+wp-content/themes/zlobek/node_modules/
 
 ### ignore config file ###
 wp-config.php

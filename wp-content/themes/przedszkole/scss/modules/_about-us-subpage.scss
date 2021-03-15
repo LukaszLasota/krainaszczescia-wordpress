@@ -6,7 +6,7 @@
 
 .about-us-wrapper-one{
     p {
-        @include paragraph($black, $com, 1.4rem, normal, 200%);
+        @include paragraph($black, $com, 1.3rem, normal, 200%);
         text-align: justify;
         text-align-last: center;
     };
@@ -21,6 +21,7 @@
     padding: 200px 0 0;
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: 60%;
     .main-h2-two{
         width: 100%;
         padding: 60px 0 120px;
@@ -48,13 +49,13 @@
             width: 85%;
             padding: 7px 0 7px 10px;
             margin: 0;
-            @include paragraph($black, $com, 1.4rem, normal, 180%);
+            @include paragraph($black, $com, 1.2rem, normal, 180%);
         }
         
     }
     .about-us-list-width{
         .about-us-list-h4{
-            width: 45%;
+            width: 42%;
             }    
     }
 }
