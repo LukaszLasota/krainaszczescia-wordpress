@@ -2,21 +2,11 @@
 
 function showRecruitment($args = NULL){
 
-// $args
-
- // if(!$args['title']){
-//     $args['title'] = get_the_title();
-// }
-// if(!$args['subtitle']){
-//     $args['subtitle'] = get_field('page_banner_subtitle');
-// }
-
 if(get_bloginfo( 'name' ) == 'przedszkole'){
     $args['shortcode'] = do_shortcode('[contact-form-7 id="76" title="Formularz zgłoszeniowy do przedszkola"]');
 }else{
     $args['shortcode'] = do_shortcode('[contact-form-7 id="7" title="zlobek"]');
 }
-
 
 ?>
 <section class="recruitment" id="five">

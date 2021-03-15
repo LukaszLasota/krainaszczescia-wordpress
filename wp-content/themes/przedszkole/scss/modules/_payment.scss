@@ -172,11 +172,14 @@
             padding-bottom: 10px;
         }
         .div-header-img-one{
-            width: 45%;
+            width: 42%;
         }
         .div-header-img-two{
-            width: 17%;
+            width: 14%;
         }
+        // .header-img-one-width{
+        //     width: 30%;
+        // }
     }
     .div-body{
         @include flex(flex, wrap);
