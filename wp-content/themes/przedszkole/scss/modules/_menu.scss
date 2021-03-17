@@ -2,10 +2,10 @@
   width: 100%;
   position: fixed;
   z-index: 99;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 300px;
+  background-size: 100%;
+  min-height: 200px;
   opacity: 0;
   // transition: opacity 0.8s;
 }
@@ -271,26 +271,3 @@
     }
   }
 
-  .header{
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 1200px;
-    .arrow-down-img{
-      width: 90px;
-      position: absolute;
-      top: 105%;
-      right: 60px;
-  }
-  
-  }
-
-  .header-new{
-    width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 300px;
-    position: fixed;
-    z-index: 100;
-  }

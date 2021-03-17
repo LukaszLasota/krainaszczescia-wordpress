@@ -6,8 +6,8 @@ function nursery_files(){
         wp_enqueue_script('main-nursery-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.c72f2d7f59d775a96cee.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.c72f2d7f59d775a96cee.css'));
+        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.cbb953305998aa03db02.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.cbb953305998aa03db02.css'));
     }
     
     wp_localize_script('main-nursery-js', 'nurseryData', array(
@@ -30,6 +30,21 @@ add_action( 'after_setup_theme', 'nursery_features');
 
 function nursery_post_types(){
     //Nasze-atuty typ postu, Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki
+    register_post_type('banner', array(
+        'supports' => array('title', 'editor', 'excerpt'),
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'public'=> true,
+        'labels' => array(
+            'name'=> 'Banner strona główna',
+            'add_new_item' => 'Dodaj nowy banner',
+            'edit_item' => 'Edytuj banner',
+            'all_items' => 'Wszystkie bannery',
+            'singular_name' => 'Banner',
+        ),
+        'menu_icon' => 'dashicons-format-gallery',
+    ));
+    
     register_post_type('nasze-atuty', array(
         'supports' => array('title'),  
         'show_in_rest' => true,

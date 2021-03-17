@@ -5,28 +5,18 @@
 
 function kindergarten_files(){
        
-    // wp_enqueue_script( 'main-przedszkole-js', get_theme_file_uri( '/js/scripts-noWebpack.js' ), array('jquery'), '1.0', true); // dodanie pliku js, nazwa, link, zaleznosć, wersja, czy ma byc w footer czy nie (moze byc w head) dodano array(jquery) poprzedni skrypt script-bundle.js
-    
-    // wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
-   
-
     if(strstr($_SERVER['SERVER_NAME'], 'krainaszczescia.local')){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.1e863406017a6861c6d0.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.1e863406017a6861c6d0.css'));
-    // wp_enqueue_style('university_main_styles', get_stylesheet_uri('/bundled-assets/style.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.10cff0b8458f9d809820.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.10cff0b8458f9d809820.css'));
     }
-
-    // wp_enqueue_script('main-przedszkole-js', get_theme_file_uri('/js/scripts.js'), NULL, '1.0', true);
-    // wp_enqueue_style('our-main-styles', get_theme_file_uri('/css/style.css'));
     
     wp_localize_script('main-kindergarten-js', 'kindergartenData', array(
         'root_url'=> get_site_url(),
         'nonce'=> wp_create_nonce('wp_rest'),
     ));
-
 
 }
 
@@ -36,15 +26,27 @@ add_action('wp_enqueue_scripts', 'kindergarten_files');
 function kindergarten_features(){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');//dodanie wybranych obrazów w poście
-    // add_image_size('professorLandscape', 400, 260, true);//dodanie nowego rozmairu do obrazów
-    // add_image_size('professorPortrait', 480, 650, true);
-    // add_image_size('pageBanner', 1500, 350, true);
 }
 
 add_action( 'after_setup_theme', 'kindergarten_features');
 
 
 function kindergarten_post_types(){
+    register_post_type('banner', array(
+        'supports' => array('title', 'editor', 'excerpt'),
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'public'=> true,
+        'labels' => array(
+            'name'=> 'Banner strona główna',
+            'add_new_item' => 'Dodaj nowy banner',
+            'edit_item' => 'Edytuj banner',
+            'all_items' => 'Wszystkie bannery',
+            'singular_name' => 'Banner',
+        ),
+        'menu_icon' => 'dashicons-format-gallery',
+    ));
+    
     //Nasze-atuty typ postu, Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki
     register_post_type('Nasze-atuty', array(
         'supports' => array('title'),  
@@ -191,10 +193,3 @@ function kindergarten_post_types(){
 };
 
 add_action('init', 'kindergarten_post_types');
-
-// add_filter( 'wpcf7_form_elements', 'delicious_wpcf7_form_elements' );
- 
-// function delicious_wpcf7_form_elements( $form ) {
-// $form = do_shortcode( $form );
-// return $form;
-// }

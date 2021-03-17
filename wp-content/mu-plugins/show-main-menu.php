@@ -1,20 +1,16 @@
-<?php
-
-function showHeader($args = NULL){
-
-if(get_bloginfo( 'name' ) == 'przedszkole'){
-    $args['alt'] = 'Strona główna Przedszkola Kraina Szczęścia';
-    $args['title'] = 'Przedszkole Kraina Szczęścia';
-}else{
-    $args['alt'] = 'Strona główna Żłobek Kraina Szczęścia';
-    $args['title'] = 'Złobek Kraina Szczęścia';
-}
-
+<?php function showMainMenu($args = NULL){ 
+    
+    if(get_bloginfo( 'name' ) == 'przedszkole'){
+        $args['alt'] = 'Strona główna Przedszkola Kraina Szczęścia';
+        $args['title'] = 'Przedszkole Kraina Szczęścia';
+    }else{
+        $args['alt'] = 'Strona główna Żłobek Kraina Szczęścia';
+        $args['title'] = 'Złobek Kraina Szczęścia';
+    }
+    
 ?>
 
-<header class="header" id="one" style="background-image: url(<?php echo get_theme_file_uri('/images/header/1.png'); ?>);">
-  
-      <div class="nav-bg" style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);"> </div>
+<div class="nav-bg" style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);"> </div>
 
       <nav class="main-nav">
         <div class="main-nav-links">
@@ -88,19 +84,5 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
         </div>
         
       </nav>
-      
-      <!-- <div class="header-img" >
-        <img src="<?php echo get_theme_file_uri('/images/header/1.png'); ?>" alt="">
-      </div> -->
 
-      <!-- <div class="arrow-down-img">
-        <a href="#two">
-          <img src="<?php echo get_theme_file_uri('/images/1.png'); ?>" alt="">
-        </a>
-      </div> -->
-     
-    </header>
-
-    <?php
-
-}
+<?php }
