@@ -26,10 +26,13 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
             <div class="about-image-div"></div>
                 <p><?php echo $args['paragraph']; ?></p>
             </div>
-
-            <a class="btn">
-                <!-- <a href="#" style="background-image: url(<?php echo get_theme_file_uri('/images/o-nas/3.png'); ?>);"></a>  -->
-            </a>
+            <div class="about-btn">
+                <a href="<?php echo site_url( '/o-nas'); ?>">
+                    <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/4.png'); ?>" alt="">
+                    <img class="about-btn-two" src="<?php echo get_theme_file_uri('/images/o-nas/3.png'); ?>" alt="">
+                </a>
+            </div>
+            
             
         </div>
     </section>

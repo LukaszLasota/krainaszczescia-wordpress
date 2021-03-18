@@ -66,6 +66,23 @@
             }
         }
     }
+}
 
-   
+#site-id-3{
+    .contact{
+        .contact-one{
+            width: 55%;
+            left: 45%;
+            .content{
+                width: 55%;
+                padding-top: 22%;
+                padding-left: 10%;
+            }
+            .content-one{
+                h4{
+                    color: $red;
+                }
+            }
+        }
+    }
 }

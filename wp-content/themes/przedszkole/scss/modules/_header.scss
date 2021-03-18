@@ -17,6 +17,14 @@
     justify-content: center;
   }
   
+  #site-id-3{
+    .heder-content{
+      p{
+        color: $lightBlue;
+      }
+    }
+  }
+
   .heder-content{
     text-align: right;
     padding-top: 20%;
@@ -60,3 +68,5 @@
     position: fixed;
     z-index: 100;
   }
+
+ 

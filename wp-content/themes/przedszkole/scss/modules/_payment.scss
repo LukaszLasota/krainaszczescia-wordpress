@@ -41,11 +41,7 @@
     display: flex;
     h4{
         margin: 0;
-        line-height: 180%;
-        color: $black;
-        font-size: 1.3rem;
-        font-style: $com;
-        font-weight: bold;
+        @include paragraph($black, $com, 1.3rem, bold, 180%);
     }
     span{
         margin: 0px 8px 0 -30px;
@@ -81,6 +77,24 @@
     }
 }
 
+#site-id-3{
+    .payment-ul{
+        li{
+            color: $white;
+            font-weight: normal;
+            &::before{
+                color: $red;
+            }
+        }
+    }
+    .payment-h4{
+        h4{
+            color: $white;
+            font-weight: normal;
+        }
+    }   
+  }
+
 /*Second part of section*/
 .payment-two{
     @include flex(flex, wrap);
@@ -112,6 +126,22 @@
     }
 }
 
+
+#site-id-3{
+    .payment-progressbar{
+        border: 2px solid $lightRed;
+    }
+    .payment-two-div{
+        background-color: $cardColorTwo;
+        &:hover{
+            box-shadow: inset 0px 0px 0px 10px $red; 
+        }
+    }
+    .div-header{
+        background-color:  $cardColorHeadTwo;
+    }
+  }
+
 .payment-two-content{
     width: 100%;
     @include flex(flex, wrap);
@@ -124,7 +154,7 @@
         padding: 10px;
         margin: 0 10px;
         border-radius: 33px;
-        background-color: #fcf3db;
+        background-color: $cardColorOne;
         transition: 1s transform, .2s box-shadow;
         box-sizing: border-box;
         &:hover{
@@ -139,7 +169,7 @@
     }
   
     .div-header{
-        background-color:  #e0d7e2;
+        background-color:  $cardColorHead;
         padding-top: 20px;
         border-radius: 26px 26px 0 0;
         text-align: left; 

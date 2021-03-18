@@ -1,6 +1,4 @@
 .parrents{
-    // width: $main-width;
-    // margin: auto;
     padding: 350px 0 200px;
     .main-h2{
         img{
@@ -9,6 +7,34 @@
     }
     p{
         @include paragraph($black, $com, 1.8rem, normal, 130%);
+    }
+}
+
+#site-id-3{
+    .toggle-main-one, .toggle-main-two{
+        border-color: $blue;
+    }
+    .toggle{
+        background-color: $toogleBlue;
+        @include paragraph($black, $com, 2.0rem, normal, 130%);
+        color: $violet;
+    }
+    .toggle-one{
+        &:after {
+            content: "Dla gości";
+            color: $red;
+        }
+    }
+    
+    .toggle-two{
+        &:after {
+            content: "Dla rodziców";
+            color: $red;
+        }
+    }
+    
+    .toggle-border{
+        border-color: $blue;
     }
     
 }

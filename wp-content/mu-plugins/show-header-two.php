@@ -11,7 +11,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
 }
 
 ?>
-<header class="header-new"  style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);">
+<header  class="header-new"  style="background-image: url(<?php echo get_theme_file_uri('/images/menu/2.png'); ?>);">
     
     <nav class="main-nav">
       <div class="main-nav-links">

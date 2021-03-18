@@ -46,3 +46,24 @@
         @include paragraph($black, $com, 1.3rem, normal, 110%);
     }
 }
+
+#site-id-3{
+    .career{
+        .career-post-header{
+            img{
+                width: 120px;
+                bottom: -25px;
+                left: -35px;
+            }
+            h3{
+                color: $blue;
+            }
+        }
+        h4{
+            color: $blue;
+            background: linear-gradient(to right, $red 0%, $lightRed 100%) left bottom no-repeat; 
+            background-size: 170px 3px;
+        }
+
+    }
+}

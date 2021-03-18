@@ -16,6 +16,20 @@
     }
 }
 
+#site-id-3{
+    .recruitment-form-h3{
+        span{
+        background: linear-gradient(to right, $lightRed 0%, $red 100%) center bottom no-repeat; 
+        }
+        
+    }
+    .wpcf7 .center{
+        input[type="text"], input[type="email"], input[type="date"], select{
+            border: 1px solid $lightRed;
+        }
+    }
+}
+
 .wpcf7 .center{
     width: 100%;
     align-items: flex-start;

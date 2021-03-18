@@ -7,6 +7,6 @@
     <?php wp_head(); ?>
 
   </head>
-  <body id="one" <?php body_class(); ?>>
+  <body id="site-id-<?php echo get_current_blog_id(); ?>" <?php body_class(); ?>>
 
   <?php showHeaderNew(); ?>

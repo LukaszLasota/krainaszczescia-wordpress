@@ -101,7 +101,7 @@
 
 </div>
         <div class="arrow-down-img">
-            <a href="#one">
+            <a href="#site-id-<?php echo get_current_blog_id(); ?>">
                 <img src="<?php echo get_theme_file_uri('/images/2.png'); ?>" alt="">
             </a>
         </div>
