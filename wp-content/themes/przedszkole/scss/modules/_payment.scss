@@ -2,26 +2,50 @@
 .payment{
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     min-height: 2800px;
     position: relative;
-    .arrow-down-img{
-        width: 90px;
-        position: absolute;
-        top: 800px;
-        right: 60px;
-    }
 }
-.payment-position{
-    // width: $main-width;
-    // margin: auto; 
-    height: 300px;
-}
-.payment-space{
-    padding: 215px;
+
+.payment-space-one, .payment-space-two{
+    padding: 215px 0;
     width: 100%;
 }
 
+@media (max-width: 1600px){
+    .payment{
+        min-height: 2100px;
+    }
+    .payment-space-one{
+        padding: 150px 0;
+    }
+    .payment-space-two{
+        padding: 60px 0;
+    }
+}
+
+
+@media (max-width: 1400px){
+    .payment{
+        min-height: 2200px;
+    }
+    .payment-space-one{
+        padding: 130px 0;
+    }
+}
+
+@media (max-width: 1100px){
+    .payment{
+        min-height: 1800px;
+    }
+    .payment-space-one{
+        padding: 100px 0;
+        width: 100%;
+    }
+    .payment-space-two{
+        padding: 40px 0;
+    }
+}
 /*First part of section*/
 
 .payment-one{
@@ -62,9 +86,7 @@
         list-style: none;
     }
     li{
-        color: $black;
-        font-size: 1.3rem;
-        font-style: $com;
+        @include paragraph($black, $com, 1.3rem, normal, 120%);
         padding: 8px 0;
         &::before{
             content: "\2022";
@@ -95,6 +117,81 @@
     }   
   }
 
+  @media (max-width: 1600px){
+    .payment-one{
+        .main-h2{
+            padding: 10px 0 35px 0px;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .payment-h4{  
+        h4{
+            @include paragraph($black, $com, 1.3rem, bold, 170%);
+        }
+    }
+    .payment-ul{
+        padding-left: 5px;
+        li{
+            @include paragraph($black, $com, 1.3rem, normal, 120%);
+        }
+    } 
+}
+
+@media (max-width: 1400px){
+    .payment-h4{  
+        h4{
+            @include paragraph($black, $com, 1.2rem, bold, 170%);
+        }
+    }
+    .payment-ul{
+        padding-left: 5px;
+        ul{
+            padding: 5px 10px 10px 5px;
+        }
+        li{
+            @include paragraph($black, $com, 1.2rem, normal, 120%);
+            padding: 5px 0;
+        }
+    } 
+}
+
+
+@media (max-width: 1100px){
+    .payment-one{
+        .main-h2{
+            padding: 10px 0 0px 0px;
+            img{
+                width: 45%;
+            }
+        }
+    }
+    .payment-h4{  
+        h4{
+            @include paragraph($black, $com, 1.0rem, bold, 140%);
+        }
+        img{
+            width: 15px;
+        }
+    }
+    .payment-ul{
+        padding-left: 5px;
+        ul{     
+            padding: 5px 10px 10px 5px;
+        }
+        span{
+            margin: 0px 3px 0 -25px;
+            padding-top: 5px;
+        }
+        li{
+            @include paragraph($black, $com, 1.1rem, normal, 120%);
+            padding: 5px 0;
+        }
+    } 
+}
+
+
 /*Second part of section*/
 .payment-two{
     @include flex(flex, wrap);
@@ -111,18 +208,13 @@
 .payment-progressbar{
     border: 2px solid $violet;
     border-radius: 13px;
-    // padding: 5px;
     width: 94%; 
     display: flex;
     justify-content: space-between;
     span{
         padding: 5px;
         width: 32%;
-        
         border-radius: 13px;
-        // &:hover{
-        //     background-color: $violet;
-        // }
     }
 }
 
@@ -222,7 +314,7 @@
             }
         }
         p{
-            width: 88%;
+            width: 89%;
             font-style: $com;
             font-size: 1.1rem;
             text-align: left;
@@ -243,4 +335,111 @@
     }
 }
 
+
+
+@media (max-width: 1600px){
+    .payment-two{
+        .main-h2{
+            padding: 10px 0 30px 0px;
+            img{
+                width: 18%;
+            }
+        } 
+    }
+    .payment-two-content{
+        /*One of three column*/
+        .payment-two-div{
+            width: 30%;
+        }
+        .div-header{
+            padding-top: 10px;
+            h3, p{
+                font-size: 1.3rem;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+        .div-header-img{
+            .div-header-img-one{
+                width: 38%;
+            }
+            .div-header-img-two{
+                width: 12%;
+            }
+        }
+        .div-body{
+            padding: 7px 10px;
+        }
+        .pb{
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .payment-two-content{
+        /*One of three column*/
+        .payment-two-div{
+            width: 31%;
+        }
+        .div-header{
+            padding-top: 10px;
+            h3, p{
+                font-size: 1.2rem;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+        .div-body{
+            padding: 7px 10px;
+        }
+        .pb{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .payment-two{
+        .main-h2{
+            padding: 10px 0 10px 0px;
+            img{
+                width: 18%;
+            }
+        } 
+    }
+    .payment-two-content{
+        /*One of three column*/
+            padding-top: 70px;
+        .payment-two-div{
+            width: 31%;
+        }
+        .div-header{
+            padding-top: 10px;
+            h3, p{
+                font-size: 1.1rem;
+            }
+            h3{
+                font-size: 1.3rem;
+            }
+        }
+        .div-body{
+            padding: 7px 10px;
+            span{
+                padding: 10px 5px 0 0;
+                width: 7%;
+            }
+            p{
+                width: 89%;
+                font-size: 1.1rem;
+                margin: 5px 0;
+            }
+        }
+        .pb{
+            padding-bottom: 5px;
+        }
+    }
+}
 

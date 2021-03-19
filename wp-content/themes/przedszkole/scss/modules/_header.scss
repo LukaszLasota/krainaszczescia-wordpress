@@ -1,7 +1,7 @@
 .header{
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     min-height: 1200px;
     padding: 0;
     margin: 0 auto;
@@ -69,4 +69,78 @@
     z-index: 100;
   }
 
- 
+  @media (max-width: 1600px){
+    .header{
+      min-height: 900px;
+    }
+    .heder-content{
+      padding-top: 25%;
+      padding-right: 20%;
+      h2{
+          @include paragraph($white, $com, 2.5rem, bold, 200%);
+      }
+      p{
+          width: 100%;
+          @include paragraph($violet, $com, 1.4rem, normal, 110%);
+      }
+  }
+}
+  @media (max-width: 1400px){
+    .header{
+      min-height: 780px;
+    }
+    .heder-content{
+      padding-right: 15%;
+      h2{
+          @include paragraph($white, $com, 2.0rem, bold, 200%);
+      }
+      p{
+          width: 100%;
+          @include paragraph($violet, $com, 1.3rem, normal, 110%);
+      }
+      .heder-img{
+          width: 180px;
+      }
+  }
+  }
+
+
+  @media (max-width: 1200px){
+    .header{
+      min-height: 680px;
+    }
+    .heder-content{
+      padding-right: 15%;
+      h2{
+          @include paragraph($white, $com, 1.6rem, bold, 200%);
+      }
+      p{
+          width: 100%;
+          @include paragraph($violet, $com, 1.1rem, normal, 110%);
+      }
+      .heder-img{
+          width: 160px;
+      }
+  }
+  }
+
+  @media (max-width: 800px){
+    .header{
+      min-height: 550px;
+    }
+    .heder-content{
+      padding-right: 10%;
+      padding-top: 20%;
+      h2{
+          @include paragraph($white, $com, 1.5rem, bold, 170%);
+      }
+      p{
+          @include paragraph($violet, $com, 1.0rem, normal, 110%);
+      }
+      .heder-img{
+          padding-top: 5px;
+      }
+  }
+  }
+
+
