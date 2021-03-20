@@ -26,3 +26,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
 <?php
 
 }
+
+?>
+
+      

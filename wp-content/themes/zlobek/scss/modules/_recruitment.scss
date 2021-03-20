@@ -19,7 +19,8 @@
 #site-id-3{
     .recruitment-form-h3{
         span{
-        background: linear-gradient(to right, $lightRed 0%, $red 100%) center bottom no-repeat; 
+        background: linear-gradient(to right, $lightRed 0%, $red 100%) center bottom no-repeat;
+        background-size: 100% 3px; 
         }
         
     }
@@ -59,26 +60,91 @@
         width: 33%;
         @include flex(flex, wrap);
     }
-    label{
+    .label-div{
         width: 100%;
-        padding: 20px 0;
+        padding: 10px 0;
+    }
+    label {
+        width: 100%;
+        // padding: 10px 0;
         @include paragraph($black, $com, 0.9rem, normal, 120%);
         text-transform: uppercase;
     } 
-    input[type="text"], input[type="email"], input[type="date"], select{
+
+    input[type="text"], input[type="email"], input[type="date"], input[type="tel"], select{
         border: 1px solid $lightYellow;
         border-radius: 5px;
         padding: 10px 0;
+        margin-top: 5px;
     }
-    input[type="text"], input[type="email"]{
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select{
         width: 80%;
     }  
-    input[type="date"]{
-        width: 107%;
-    }  
-    select{
-        width: 89%;
-    } 
+
+    input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+      
+      /* Text color for the label */
+      input[type="checkbox"]+span {
+        cursor: pointer;
+        font: 16px sans-serif;
+        color: black;
+      }
+      
+      /* Checkbox un-checked style */
+      input[type="checkbox"]+span:before {
+        content: '';
+        border: 1px solid $lightYellow;
+        border-radius: 3px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        vertical-align: -2px;
+      }
+      
+      /* Checked checkbox style (in this case the background is green #e7ffba, change this to change the color) */
+      input[type="checkbox"]:checked+span:before {
+        /* NOTE: Replace the url with a path to an SVG of a checkmark to get a checkmark icon */
+        background-image: url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-checkmark.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        /* The size of the checkmark icon, you may/may not need this */
+        background-size: 25px;
+        border-radius: 2px;
+        background-color: $white;
+        color: $white;
+      }
+      
+      /* Adding a dotted border around the active tabbed-into checkbox */
+      input[type="checkbox"]:focus+span:before,
+      input[type="checkbox"]:not(:disabled)+span:hover:before {
+        /* Visible in the full-color space */
+        box-shadow: 0px 0px 0px 3px rgba(255, 230, 2, 0.904);
+      
+        /* Visible in Windows high-contrast themes
+           box-shadow will be hidden in these modes and
+           transparency will not be hidden in high-contrast
+           thus box-shadow will not show but the outline will
+           providing accessibility */
+        outline-color: transparent; /*switch to transparent*/
+        outline-width: 2px;
+        outline-style: dotted;
+        }
+      
+      
+      /* Disabled checkbox styles */
+      input[type="checkbox"]:disabled+span {
+        cursor: default;
+        color: black;
+        opacity: 0.5;
+      }
+
     .btn-area{
         width: 100%;
         height: 100px;
@@ -124,5 +190,35 @@
     background-size: contain;
     // opacity: 1;
     }
+
+    
 }
-     
+.wpcf7-not-valid-tip{
+    padding: 8px 0 0;
+    @include paragraph($red, $com, 1.1rem, normal, 120%);
+    text-transform: uppercase;
+}     
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output{
+    position: absolute;
+    // top: 0%;
+    right: 20%;
+    width: 25%;
+    // margin-left: auto;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output{
+    position: absolute;
+    // top: 0%;
+    right: 20%;
+    width: 25%;
+    // margin-left: auto;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 3px solid green;
+    border-radius: 15px;
+}
