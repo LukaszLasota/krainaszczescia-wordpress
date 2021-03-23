@@ -18,12 +18,12 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
  <section class="about" >
         <div class="about-position" id="two" >
       
-        <div class="about-content" style="background-image: url(<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>);">
+        <div class="about-content">
             <h2 class='main-h2' title="<?php echo $args['alt']; ?>">
                 <img src="<?php echo get_theme_file_uri('/images/o-nas/1.png'); ?>" alt="<?php echo $args['alt']; ?>">
             </h2>
             <div class="about-text">
-            <div class="about-image-div"></div>
+            <!-- <div class="about-image-div"></div> -->
                 <p><?php echo $args['paragraph']; ?></p>
             </div>
             <div class="about-btn">
@@ -32,7 +32,9 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
                     <img class="about-btn-two" src="<?php echo get_theme_file_uri('/images/o-nas/3.png'); ?>" alt="">
                 </a>
             </div>
-            
+            <div class="about-img-mobile">
+                <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>" alt="">
+            </div>
             
         </div>
     </section>
