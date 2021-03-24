@@ -42,7 +42,11 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
                     </div>
                 <?php endif; } 
         } else { ?>
-            <p>Aby zobaczyś zawartość musisz sie zalogować</p>
+            <div class="parrents-unlogin">
+                <img src="<?php echo get_theme_file_uri('/images/5.png'); ?>" alt="">
+                <p>Aby zobaczyś zawartość musisz sie zalogować.</p>
+            </div>
+            
         <?php }  ?>  
         </div>
         </div>

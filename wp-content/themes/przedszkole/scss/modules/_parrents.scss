@@ -10,33 +10,80 @@
     }
 }
 
-#site-id-3{
-    .toggle-main-one, .toggle-main-two{
-        border-color: $blue;
-    }
-    .toggle{
-        background-color: $toogleBlue;
-        @include paragraph($black, $com, 2.0rem, normal, 130%);
-        color: $violet;
-    }
-    .toggle-one{
-        &:after {
-            content: "Dla gości";
-            color: $red;
+@media (max-width: 1600px){
+    .parrents{
+        padding: 250px 0 200px;
+        .main-h2{
+            img{
+                width: 37%;
+            }
+        }
+        p{
+            @include paragraph($black, $com, 1.7rem, normal, 130%);
         }
     }
-    
-    .toggle-two{
-        &:after {
-            content: "Dla rodziców";
-            color: $red;
+}
+@media (max-width: 1024px){
+    .parrents{
+        padding: 200px 0 200px;
+        .main-h2{
+            img{
+                width: 37%;
+            }
+        }
+        p{
+            @include paragraph($black, $com, 1.6rem, normal, 130%);
         }
     }
-    
-    .toggle-border{
-        border-color: $blue;
+}
+
+@media (max-width: 800px){
+    .parrents{
+        padding: 160px 0 200px;
     }
-    
+}
+
+@media (max-width: 480px){
+    .parrents{
+        padding: 130px 0 200px;
+        .main-h2{
+            img{
+                width: 70%;
+            }
+        }
+        p{
+            @include paragraph($black, $com, 1.5rem, normal, 130%);
+        }
+    }
+}
+
+.parrents-unlogin{
+    width: 100%;
+    background: $locerLogin;
+    @include flex(flex, wrap);
+    justify-content: center;
+    padding: 50px 0 30px;
+    img{
+        width: 160px;
+    }
+    p{
+        width: 100%;
+        text-align: center;
+        @include paragraph($black, $com, 1.7rem, normal, 130%);
+    }
+}
+
+@media (max-width: 480px){
+    .parrents-unlogin{
+        padding: 40px 0 20px;
+        img{
+            width: 120px;
+        }
+        p{
+            padding: 0 10px;
+            @include paragraph($black, $com, 1.4rem, normal, 130%)
+        }
+    }
 }
 
 .toggle-main-one, .toggle-main-two{
@@ -69,7 +116,7 @@
 .toggle-one{
     border-radius: 15px 15px 0 0;
     &:after {
-        content: "Dla gości";
+        content: "Dla rodziców";
         color: $violet;
         margin-left: 7%;
     }
@@ -78,7 +125,7 @@
 .toggle-two{
     border-radius:  0 0 15px 15px;
     &:after {
-        content: "Dla rodziców";
+        content: "Dla gości";
         color: $violet;
         margin-left: 7%;
     }
@@ -101,7 +148,7 @@
     display: flex;
     flex-wrap: wrap;
     .pdf-body{
-        width: 25%;
+        width: 20%;
         // display: flex;        
     }
     .pdf-link{
@@ -135,9 +182,66 @@
     }
 }
 
+@media (max-width: 800px){
+    .toggle-body{
+        .pdf-body{
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .toggle-body{
+        .pdf-body{
+            width: 100%;
+        }
+    }
+}
 
 .toggle-content.is-visible {
 	display: block;
 	height: auto;
 }
 
+
+#site-id-3{
+    .toggle-main-one, .toggle-main-two{
+        border-color: $blue;
+    }
+    .toggle{
+        background-color: $toogleBlue;
+        @include paragraph($black, $com, 2.0rem, normal, 130%);
+        color: $violet;
+    }
+    .toggle-one{
+        &:after {
+            content: "Dla rodziców";
+            color: $red;
+        }
+    }
+    
+    .toggle-two{
+        &:after {
+            content: "Dla gości";
+            color: $red;
+        }
+    }
+    
+    .toggle-border{
+        border-color: $blue;
+    }
+    .parrents-unlogin{
+        background: $locerLoginTwo;
+    }
+
+    
+.toggle-body{
+    .pdf-image{
+        background-image: url('./../images/rodzice/4.png');
+        &:hover{
+            background-image: url('./../images/rodzice/5.png');
+        }
+    }
+}
+
+}

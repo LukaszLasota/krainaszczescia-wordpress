@@ -46,10 +46,10 @@
                 <li class="navigation-item"><a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></li></li>
                 <li class="navigation-item"><a href="#six">kontakt</a></li>
             </ul>
-          </div>
+         </div>
           <div class="menu-login">
 
-          <?php if(is_user_logged_in()) { ?>
+              <?php if(is_user_logged_in()) { ?>
 
               <div class="login-btn">
                   <a href="<?php echo wp_logout_url();  ?>">
@@ -77,7 +77,7 @@
 
               <?php } ?> 
 
-              </div>
+            </div>
 
           </div>
             
