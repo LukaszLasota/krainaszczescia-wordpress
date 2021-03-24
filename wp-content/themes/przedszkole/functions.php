@@ -9,8 +9,8 @@ function kindergarten_files(){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.8310eababefe9add0463.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.8310eababefe9add0463.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.19d8a469f185b925caba.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.19d8a469f185b925caba.css'));
     }
     
     wp_localize_script('main-kindergarten-js', 'kindergartenData', array(
