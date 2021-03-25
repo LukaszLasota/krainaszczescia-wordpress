@@ -1,0 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap);
+body{padding:0;margin:0;font-size:10px;box-sizing:border-box;overflow-x:hidden}img{width:100%}.main-site{width:100%;display:flex;flex-wrap:wrap;justify-content:center}.main-header{width:100%;display:flex;flex-wrap:wrap;justify-content:center;padding-top:50px}.main-header .logo{width:160px;background-color:cadetblue}.main-div{width:50%}.main-div .main-div-img{width:100%;position:relative}.main-div .main-div-img a{display:block;width:100%;height:100%}.main-div .main-div-img img{width:100%}.main-div .main-div-img .abs{position:absolute;top:0%;right:0%;bottom:0%;left:0%}@media (max-width: 800px){.main-header{padding-top:30px}.main-header .logo{width:120px}.main-div{width:100%}}
+

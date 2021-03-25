@@ -1,0 +1,20 @@
+@mixin paragraph($color, $font, $size, $weight, $line) {
+    color: $color;
+    font-style: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+  }
+
+  @mixin flex($flex, $wrap){
+    display: $flex;
+    flex-wrap: $wrap;
+  }
+
+  @mixin position($type, $top, $right, $bottom, $left){
+    position: $type;
+    top: $top;
+    right: $right; 
+    bottom: $bottom;
+    left: $left;
+}
