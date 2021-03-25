@@ -1,8 +1,19 @@
 //Add background image with scroll//
 const menuBackground = document.querySelector('.nav-bg');
 
-let scrollpos = window.scrollY;
-const header_height = 900;
+let header_height;
+
+if(window.innerWidth >  1600){
+    header_height = 900;
+} else if(window.innerWidth >  1400){
+    header_height = 700;
+}else if(window.innerWidth >  1200){
+    header_height = 570;
+}else if(window.innerWidth > 800){
+    header_height = 420;
+}else if(window.innerWidth > 650){
+    header_height = 350;
+}
 
 const add_class_on_scroll = () => {
     menuBackground.style.opacity = 1;
@@ -13,15 +24,18 @@ const remove_class_on_scroll = () =>  {
     menuBackground.style.transition = 'opacity 0.1s';
 }
 
-window.addEventListener('scroll', function(){ 
-    scrollpos = window.scrollY;
-    if(scrollpos >= header_height){
-        add_class_on_scroll();
-    } 
-    else {
-        remove_class_on_scroll();
-    }
-});
+if(menuBackground){
+    window.addEventListener('scroll', function(){ 
+        scrollpos = window.scrollY;
+        if(scrollpos >= header_height){
+            add_class_on_scroll();
+        } 
+        else {
+            remove_class_on_scroll();
+        }
+    });
+}
+
 
 
 // Hambureger 

@@ -15,27 +15,19 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
     
     <nav class="main-nav">
       <div class="main-nav-links">
-        <div class="main-nav-back">
-            <a href="<?php get_site_url(); ?>">
-              <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
-            </a>
+          <div class="main-nav-back">
+              <a href="<?php get_site_url(); ?>">
+                <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+              </a>
           </div>
 
-          <h1 class="logo" title="<?php echo $args['title']; ?>">
-            <a href="/">
-              <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
-            </a>
-          </h1>
+            <h1 class="logo" title="<?php echo $args['title']; ?>">
+              <a href="/">
+                <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
+              </a>
+            </h1>
       </div>
-    
 
-      <button class="hamburger" aria-expanded="false">
-          <span class="sr-only">Otwórz/zamknij menu</span>
-          <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-          </span>
-      </button>
-      
       <div class="navigation">
           <ul class="navigation-list">
               <li class="navigation-item"><a href="<?php echo site_url( '/o-nas'); ?>">O nas</a></li>
@@ -84,10 +76,15 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
 
             </div>
 
-        </div>
+        
           
       </div>
-      
+      <button class="hamburger" aria-expanded="false">
+          <span class="sr-only">Otwórz/zamknij menu</span>
+          <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+          </span>
+      </button>
     </nav>
   
     

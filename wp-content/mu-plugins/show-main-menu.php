@@ -28,12 +28,7 @@
         </div>
       
 
-        <button class="hamburger" aria-expanded="false">
-            <span class="sr-only">Otwórz/zamknij menu</span>
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
+        
         
         <div class="navigation">
             <ul class="navigation-list">
@@ -79,10 +74,16 @@
 
             </div>
 
-          </div>
+         
+          
             
         </div>
-        
+        <button class="hamburger" aria-expanded="false">
+            <span class="sr-only">Otwórz/zamknij menu</span>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
       </nav>
 
 <?php }
