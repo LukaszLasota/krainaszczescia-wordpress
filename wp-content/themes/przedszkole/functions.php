@@ -1,16 +1,13 @@
 <?php 
 
-// require get_theme_file_path('/includes/search-route.php');
-// require get_theme_file_path('/includes/like-route.php');
-
 function kindergarten_files(){
        
     if(strstr($_SERVER['SERVER_NAME'], 'krainaszczescia.local')){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.19d8a469f185b925caba.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.19d8a469f185b925caba.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.51a4203f90b9f3371423.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.51a4203f90b9f3371423.css'));
     }
     
     wp_localize_script('main-kindergarten-js', 'kindergartenData', array(
@@ -105,91 +102,55 @@ function kindergarten_post_types(){
         ),
         'menu_icon' => 'dashicons-pdf'
     ));
-
-//     //Program post type Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki
-//     register_post_type('program', array(
-//         'show_in_rest' => true,
-//         'supports' => array('title'),
-//         'rewrite' => array('slug'=> 'programs'),
-//         'has_archive' => true,
-//         'public'=> true,
-//         'labels' => array(
-//             'name'=> 'Programs',
-//             'add_new_item' => 'Add new ',
-//             'edit_item' => 'Edit Program',
-//             'all_items' => 'All Programs',
-//             'singular_name' => 'Program',
-//         ),
-//         'menu_icon' => 'dashicons-awards',
-//     ));
-
-//     // Professor Post Type
-//   register_post_type('professor', array(
-//     'show_in_rest' => true,
-//     'supports' => array('title', 'editor', 'thumbnail'),
-//     'public' => true,
-//     'labels' => array(
-//       'name' => 'Professors',
-//       'add_new_item' => 'Add New Professor',
-//       'edit_item' => 'Edit Professor',
-//       'all_items' => 'All Professors',
-//       'singular_name' => 'Professor'
-//     ),
-//     'menu_icon' => 'dashicons-welcome-learn-more'
-//   ));
-
-//   //Campus post type Po każdym dodaniu nowego rodzaju postu trzeba odświeżyć permalinki
-//   register_post_type('campus', array(
-//     'capability_type'=>'campus',
-//     'map_meta_cap' => true,
-//     'show_in_rest' => true,
-//     'supports' => array('title', 'editor', 'excerpt'),
-//     'rewrite' => array('slug'=> 'campuses'),
-//     'has_archive' => true,
-//     'public'=> true,
-//     'labels' => array(
-//         'name'=> 'Campuses',
-//         'add_new_item' => 'Add New Campus',
-//         'edit_item' => 'Edit Campus',
-//         'all_items' => 'All campuses',
-//         'singular_name' => 'Campus',
-//     ),
-//     'menu_icon' => 'dashicons-location-alt',
-// ));
-
-// //note post type
-// register_post_type('note', array(
-//   'capability_type'=> 'note',
-//   'map_meta_cap'=> true,
-//   'show_in_rest' => true,
-//   'supports' => array('title', 'editor'),
-//   'public' => false,
-//   'show_ui'=> true,
-//   'labels' => array(
-//     'name' => 'Notes',
-//     'add_new_item' => 'Add New note',
-//     'edit_item' => 'Edit note',
-//     'all_items' => 'All notes',
-//     'singular_name' => 'note'
-//   ),
-//   'menu_icon' => 'dashicons-welcome-write-blog'
-// ));
-  
-// //Like post type
-// register_post_type('like', array(
-//   'supports' => array('title'),
-//   'public' => false,
-//   'show_ui'=> true,
-//   'labels' => array(
-//     'name' => 'Likes',
-//     'add_new_item' => 'Add New Like',
-//     'edit_item' => 'Edit Like',
-//     'all_items' => 'All Likes',
-//     'singular_name' => 'Like'
-//   ),
-//   'menu_icon' => 'dashicons-heart'
-// ));
   
 };
 
 add_action('init', 'kindergarten_post_types');
+
+
+
+//Redirecy subscriber acount out of admin to homepage
+
+add_action('admin_init', 'redirectSubsToFrontEnd');
+
+function redirectSubsToFrontEnd(){
+
+    $ourCurrenyUser = wp_get_current_user();
+
+    if(count($ourCurrenyUser->roles) == 1 AND $ourCurrenyUser->roles[0] == 'subscriber'){
+        wp_redirect( site_url('/dla-rodzica'));
+        exit;
+    }
+}
+
+add_action('wp_loaded', 'nowSubsAdminBar');
+
+function nowSubsAdminBar(){
+
+    $ourCurrenyUser = wp_get_current_user();
+
+    if(count($ourCurrenyUser->roles) == 1 AND $ourCurrenyUser->roles[0] == 'subscriber'){
+        show_admin_bar(false);
+    }
+}
+
+//custom login screen
+
+add_filter('login_headerurl', 'ourHeaderUrl');
+
+function ourHeaderUrl(){
+    return esc_url(site_url('/'));
+}
+
+// add_action('login_enqueue_scripts', 'ourLoginCSS' );
+
+// function ourLoginCSS(){
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.51a4203f90b9f3371423.css'));
+//     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+// }
+
+add_filter('login_headertitle', 'ourLoginTitle');
+
+function ourLoginTitle(){
+    return get_bloginfo('name');
+}

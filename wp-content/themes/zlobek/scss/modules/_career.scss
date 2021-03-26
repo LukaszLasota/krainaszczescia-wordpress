@@ -67,3 +67,120 @@
 
     }
 }
+
+@media (max-width: 1600px){
+    .career{
+        padding: 220px 0 200px;
+        scroll-margin-top: $scroll-margin-top;
+        .main-h2{
+            padding: 10px 0 30px;
+            img{
+                width: 25%;
+            }
+        }
+        .career-post-header{
+            img{
+                width: 100px;
+                bottom: -10px;
+                left: -35px;
+            }
+            h3{
+                padding: 20px 0 0px;
+                @include paragraph($violet, $com, 2.2rem, normal, 110%);
+                width: 100%;
+            }
+        }
+        .career-no-recrutation{
+            h3{
+                @include paragraph($black, $com, 2.3rem, normal, 110%);
+            }
+        }
+        h4{
+           
+            @include paragraph($violet, $com, 1.5rem, normal, 110%);
+            background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
+            background-size: 150px 3px;
+        }
+        p{
+            @include paragraph($black, $com, 1.2rem, normal, 110%);
+        }
+    }
+}
+
+
+@media (max-width: 800px){
+    .career{
+        padding: 120px 0 200px;
+        .main-h2{
+            padding: 10px 0 10px;
+            img{
+                width: 35%;
+            }
+        }
+        .career-post-header{
+            img{
+                width: 90px;
+                bottom: -10px;
+                left: -20px;
+            }
+            h3{
+                padding: 20px 0 0px;
+                @include paragraph($violet, $com, 1.9rem, normal, 110%);
+                width: 100%;
+            }
+        }
+        .career-no-recrutation{
+            h3{
+                @include paragraph($black, $com, 2.0rem, normal, 110%);
+            }
+        }
+        h4{
+           
+            @include paragraph($violet, $com, 1.4rem, normal, 110%);
+            background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
+            background-size: 140px 3px;
+        }
+        p{
+            @include paragraph($black, $com, 1.2rem, normal, 110%);
+        }
+    }
+}
+
+
+@media (max-width: 480px){
+    .career{
+        padding: 120px 0 200px;
+        .main-h2{
+            padding: 10px 0 10px;
+            img{
+                width: 65%;
+            }
+        }
+        .career-post-header{
+            img{
+                width: 90px;
+                bottom: -10px;
+                left: -10px;
+            }
+            h3{
+                padding: 20px 0 0px;
+                @include paragraph($violet, $com, 1.6rem, normal, 110%);
+                width: 100%;
+            }
+        }
+        .career-no-recrutation{
+            h3{
+                @include paragraph($black, $com, 2.0rem, normal, 110%);
+            }
+        }
+        h4{
+           
+            @include paragraph($violet, $com, 1.3rem, normal, 110%);
+            background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
+            background-size: 140px 3px;
+        }
+        p{
+            @include paragraph($black, $com, 1.2rem, normal, 110%);
+        }
+    }
+}

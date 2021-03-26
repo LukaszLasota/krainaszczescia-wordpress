@@ -25,7 +25,6 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
                 $ourStrenghts = new WP_Query(array(
                 'posts_per_page' => 6,
                 'post_type' => 'nasze-atuty',
-                // 'meta_key' => 'nasze_atuty',
                 'order' => 'ASC',
                 ));
                 while($ourStrenghts->have_posts()){
@@ -41,9 +40,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
             <?php } 
             
                 $ourStrenghtsTwo = new WP_Query(array(
-                // 'posts_per_page' => 7,
                 'post_type' => 'nasze-atuty',
-                // 'meta_key' => 'nasze_atuty',
                 'order' => 'ASC',
                 'offset' => 6,
                 ));

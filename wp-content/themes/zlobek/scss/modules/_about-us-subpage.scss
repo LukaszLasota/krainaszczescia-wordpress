@@ -1,6 +1,4 @@
 .about-us-wrapper{
-    // width: $main-width;
-    // margin: auto;
     padding: 350px 0 200px;
 }
 
@@ -58,4 +56,175 @@
             width: 42%;
             }    
     }
+}
+
+@media (max-width: 1600px){
+    .about-us-wrapper{
+        padding: 150px 0 200px;
+    }
+    .about-us-wrapper-one{
+        p {
+            @include paragraph($black, $com, 1.2rem, normal, 200%);
+        };
+        .main-h2{
+            padding: 60px 0;
+        }
+    }
+    .about-us-wrapper-two{
+        background-size: 52%;
+        .main-h2-two{
+            padding: 40px 0 50px;
+            img{
+                width: 40%;
+            }
+        }  
+        .about-us-list{
+            .about-us-list-img{
+                padding-top: 17px;
+                width: 30px;
+                margin-left: -40px;
+                img{
+                width: 80%;
+                }
+            }
+            .about-us-list-h4{
+                width: 85%;
+                padding: 7px 0 7px 10px;
+                margin: 0;
+                @include paragraph($black, $com, 1.2rem, normal, 180%);
+            }
+            
+        }
+        .about-us-list-width{
+            .about-us-list-h4{
+                width: 42%;
+                }    
+        } 
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .about-us-wrapper{
+        padding: 120px 0 170px;
+    }
+    .about-us-wrapper-one{
+        p {
+            @include paragraph($black, $com, 1.2rem, normal, 200%);
+        };
+        .main-h2{
+            padding: 60px 0;
+        }
+    }
+    .about-us-wrapper-two{
+        background-size: 52%;
+        padding: 100px 0 0;
+        .main-h2-two{
+            padding: 40px 0 50px;
+            img{
+                width: 40%;
+            }
+        }  
+        .about-us-list{
+            .about-us-list-img{
+                margin-left: 0px;
+                img{
+                width: 80%;
+                }
+            }            
+        }
+        .about-us-list-width{
+            .about-us-list-h4{
+                width: 42%;
+                }    
+        } 
+    }
+    
+}
+
+@media (max-width: 800px){
+    .about-us-wrapper{
+        padding: 90px 0 150px;
+    }
+    .about-us-wrapper-one{
+        p {
+            @include paragraph($black, $com, 1.2rem, normal, 200%);
+        };
+        .main-h2{
+            padding: 60px 0;
+        }
+    }
+    .about-us-wrapper-two{
+        background-size: 52%;
+        padding: 50px 0 0;
+        .main-h2-two{
+            padding: 0px 0 30px;
+            img{
+                width: 40%;
+            }
+        }  
+        .about-us-list{
+            .about-us-list-img{
+                margin-left: 0px;
+                img{
+                width: 80%;
+                }
+            }            
+        }
+        .about-us-list-width{
+            .about-us-list-h4{
+                width: 45%;
+                }    
+        } 
+    }
+    
+}
+
+@media (max-width: 480px){
+    .about-us-wrapper{
+        padding: 90px 0 150px;
+    }
+    .about-us-wrapper-one{
+        p {
+            @include paragraph($black, $com, 1.1rem, normal, 200%);
+            text-align: left;
+            text-align-last: left;
+        };
+        .main-h2{
+            padding: 30px 0;
+            img{
+                width: 40%;
+            }
+        }
+    }
+    .about-us-wrapper-two{
+        background-size: 90%;
+        padding: 50px 0 450px;
+        background-position: bottom center;
+        .main-h2-two{
+            padding: 0px 0 30px;
+            img{
+                width: 80%;
+            }
+        }  
+        .about-us-list{
+            .about-us-list-img{
+                margin-left: 0px;
+                img{
+                width: 70%;
+                }
+            }
+            .about-us-list-h4{
+                width: 85%;
+                @include paragraph($black, $com, 1.1rem, normal, 180%);
+            }            
+        }
+        .about-us-list-width{
+            .about-us-list-h4{
+                width: 85%;
+                @include paragraph($black, $com, 1.1rem, normal, 180%);
+                }    
+        } 
+    }
+    
 }

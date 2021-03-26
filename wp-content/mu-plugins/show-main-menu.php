@@ -15,7 +15,7 @@
       <nav class="main-nav">
         <div class="main-nav-links">
           <div class="main-nav-back">
-              <a href="http://krainaszczescia.local/">
+              <a href="http://new.krainaszczescia.edu.pl/">
                 <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
               </a>
             </div>

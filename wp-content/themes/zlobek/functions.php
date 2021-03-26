@@ -6,8 +6,8 @@ function nursery_files(){
         wp_enqueue_script('main-nursery-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.8afc4cf286bd65c8ed67.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.8afc4cf286bd65c8ed67.css'));
+        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.8319864cbddc7ba7469e.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.8319864cbddc7ba7469e.css'));
     }
     
     wp_localize_script('main-nursery-js', 'nurseryData', array(
@@ -106,3 +106,50 @@ function nursery_post_types(){
 };
 
 add_action('init', 'nursery_post_types');
+
+
+//Redirecy subscriber acount out of admin to homepage
+
+add_action('admin_init', 'redirectSubsToFrontEnd');
+
+function redirectSubsToFrontEnd(){
+
+    $ourCurrenyUser = wp_get_current_user();
+
+    if(count($ourCurrenyUser->roles) == 1 AND $ourCurrenyUser->roles[0] == 'subscriber'){
+        wp_redirect( site_url('/dla-rodzica'));
+        exit;
+    }
+}
+
+add_action('wp_loaded', 'nowSubsAdminBar');
+
+function nowSubsAdminBar(){
+
+    $ourCurrenyUser = wp_get_current_user();
+
+    if(count($ourCurrenyUser->roles) == 1 AND $ourCurrenyUser->roles[0] == 'subscriber'){
+        show_admin_bar(false);
+    }
+}
+
+//custom login screen
+
+add_filter('login_headerurl', 'ourHeaderUrl');
+
+function ourHeaderUrl(){
+    return esc_url(site_url('/'));
+}
+
+// add_action('login_enqueue_scripts', 'ourLoginCSS' );
+
+// function ourLoginCSS(){
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.8319864cbddc7ba7469e.css'));
+//     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+// }
+
+add_filter('login_headertitle', 'ourLoginTitle');
+
+function ourLoginTitle(){
+    return get_bloginfo('name');
+}
