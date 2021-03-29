@@ -30,8 +30,8 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
                 while($parrentPDF->have_posts()){
                       $parrentPDF->the_post(); 
 
-                $fileParrent = get_field('pdf-rodzice');
-                $urlParrent = $fileParrent['url'];
+                $fileParrent = get_field("pdf-rodzice");
+                $urlParrent = $fileParrent["url"];
 
                 if( $fileParrent): ?>
                     <div class="pdf-body">

@@ -18,8 +18,9 @@
             <p><a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">aktualności</a></p>
             <p><a href="#three">oferta</a></p>
             <p><a href="#four">opłaty</a></p>
-            <p><a href="#">rekrutacja</a></p>
-            <p><a href="#">dla rodzica</a></p>
+            <p><a href="#five">rekrutacja</a></p>
+            <p><a href="<?php echo site_url( '/dla-rodzica'); ?>">dla rodzica</a></p>
+            <p><a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></p>
             <p><a href="#five">kontakt</a></p>
             <p class="footer-empty"></p>
             <p class="footer-empty"></p>
