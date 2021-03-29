@@ -73,22 +73,6 @@
     }
 }
 
-
-#site-id-3{
-    .recruitment-form-h3{
-        span{
-        background: linear-gradient(to right, $lightRed 0%, $red 100%) center bottom no-repeat;
-        background-size: 100% 3px; 
-        }
-        
-    }
-    .wpcf7 .center{
-        input[type="text"], input[type="email"], input[type="date"], select{
-            border: 1px solid $lightRed;
-        }
-    }
-}
-
 .wpcf7 .center{
     width: 100%;
     align-items: flex-start;
@@ -253,6 +237,41 @@
     
 }
 
+#site-id-3{
+    .recruitment-form-h3{
+        span{
+        background: linear-gradient(to right, $lightRed 0%, $red 100%) center bottom no-repeat;
+        background-size: 100% 3px; 
+        }
+        
+    }
+    .wpcf7 .center{
+        input[type="text"], input[type="email"], input[type="date"], input[type="tel"], select{
+            border: 1px solid $lightRed;
+        }
+    }
+
+    input[type="checkbox"]+span:before {
+        content: '';
+        border: 1px solid $lightRed;
+      }
+
+      input[type="checkbox"]:focus+span:before,
+      input[type="checkbox"]:not(:disabled)+span:hover:before {
+        box-shadow: 0px 0px 0px 3px rgba(251, 117, 167, 0.504);
+      
+        /* Visible in Windows high-contrast themes
+           box-shadow will be hidden in these modes and
+           transparency will not be hidden in high-contrast
+           thus box-shadow will not show but the outline will
+           providing accessibility */
+        outline-color: transparent; /*switch to transparent*/
+        outline-width: 2px;
+        outline-style: dotted;
+        }
+}
+
+
 @media (max-width: 800px){
     .wpcf7 .center{
         .recruitment-form-h3{
@@ -261,7 +280,6 @@
             span{
             @include paragraph($black, $com, 1.3rem, normal, 110%);
             }
-            
         }
         .recruitment-form-one{
             width: 100%;   
@@ -329,7 +347,7 @@
             @include paragraph($black, $com, 1.0rem, normal, 120%);
         } 
         input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select{
-            width: 100%;
+            width: 95%;
         }  
         .btn-area{
             padding-top: 20px;

@@ -284,6 +284,7 @@
         padding: 5px;
         width: 32%;
         border-radius: 13px;
+        transition: all 1.2s;
     }
 }
 
@@ -302,6 +303,8 @@
         background-color:  $cardColorHeadTwo;
     }
   }
+
+ 
 
 .payment-two-content{
     width: 100%;
@@ -404,6 +407,15 @@
     }
 }
 
+// .payment-two-content .payment-two-div:hover + .payment-progressbar span{
+//     background-color: blueviolet;
+//   }
+
+//   .payment-progressbar:hover{
+//     span{
+//         background-color: blueviolet;
+//     }
+//   } 
 
 
 @media (max-width: 1600px){

@@ -70,16 +70,13 @@ document.addEventListener('click', function (event) {
 
 }, false);
 
-const toggleMainOne = document.querySelector('.toggle-one');
-const toggleMainTwo = document.querySelector('.toggle-two');
-if(toggleMainOne){
-	toggleMainOne.addEventListener('click', function(){
-		toggleMainOne.classList.toggle('toggle-border');
+
+const toggleMain = document.querySelectorAll('.toggle');
+
+for(let i = 0; i < toggleMain.length; i++){
+	toggleMain[i].addEventListener("click", function() {
+	toggleMain[i].classList.toggle('toggle-border');
 	});
-	
-	toggleMainTwo.addEventListener('click', function(){
-		toggleMainTwo.classList.toggle('toggle-border');
-	})
 }
 
 
