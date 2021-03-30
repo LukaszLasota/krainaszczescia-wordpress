@@ -16,13 +16,19 @@
         <div class="main-nav-links">
           <div class="main-nav-back">
               <a href="http://new.krainaszczescia.edu.pl/">
-                <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+                <picture>
+                  <source srcset="<?php echo get_theme_file_uri('/images/3.png'); ?>" media="(max-width: 1024px)">
+                  <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+                </picture>
               </a>
             </div>
 
             <h1 class="logo" title="<?php echo $args['title']; ?>">
               <a href="/">
-                <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
+                <picture>
+                  <source srcset="<?php echo get_theme_file_uri('/images/menu/logo.png'); ?>" media="(max-width: 1024px)">
+                  <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
+                </picture>
               </a>
             </h1>
         </div>
@@ -66,7 +72,10 @@
                 </div>
                 <div class="login-avatar">
                   <a href="<?php echo wp_login_url();  ?>">
-                    <img src="<?php echo get_theme_file_uri('/images/menu/3.png'); ?>" alt="">
+                    <picture>
+                      <source srcset="<?php echo get_theme_file_uri('/images/menu/4.png'); ?>" media="(max-width: 1024px)">
+                      <img src="<?php echo get_theme_file_uri('/images/menu/3.png'); ?>" alt="">
+                    </picture>
                   </a>
                 </div>
 
