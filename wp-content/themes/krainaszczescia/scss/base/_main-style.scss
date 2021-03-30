@@ -23,7 +23,6 @@ img{
     padding-top: 50px;
     .logo{
         width: 160px;
-        background-color: cadetblue;
     }
 }
 .main-div{
@@ -43,17 +42,58 @@ img{
         .abs{
             @include position(absolute, 0%, 0%, 0%, 0%);
         }
+        .img-text{
+            width: 250px;
+            @include position(absolute, auto, 50%, 18%, 50%);
+            transform: translateX(-50%);
+        }
+        .text-one{
+            width: 150px;
+        }
+        @media (max-width: 1400px){
+            .img-text{
+                width: 220px;
+            }
+            .text-one{
+                width: 130px;
+            }
+        }
+        @media (max-width: 1024px){
+            .img-text{
+                width: 250px;
+            }
+            .text-one{
+                width: 150px;
+            }
+        }
+        @media (max-width: 600px){
+            .img-text{
+                width: 160px;
+            }
+            .text-one{
+                width: 100px;
+            }
+        }
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1024px){
+    .main-header{
+        padding-top: 40px;
+        .logo{
+            width: 180px;
+        }
+    }
+    .main-div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
     .main-header{
         padding-top: 30px;
         .logo{
             width: 120px;
         }
-    }
-    .main-div{
-        width: 100%;
     }
 }

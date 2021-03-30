@@ -17,6 +17,7 @@ get_header();
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/2.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/3.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/4.png'); ?>" alt="">
+                <img class="img-text text-one" src="<?php echo get_theme_file_uri('/images/10.png'); ?>" alt="">
             </a>
         </div>
     </div>
@@ -27,6 +28,7 @@ get_header();
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/6.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/7.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/8.png'); ?>" alt="">
+                <img class="img-text" src="<?php echo get_theme_file_uri('/images/9.png'); ?>" alt="">
             </a>
         </div>
     </div>
