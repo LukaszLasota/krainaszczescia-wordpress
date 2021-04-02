@@ -10,9 +10,8 @@
   }
 
   .heder-position{
+    @include position(absolute, 0%, 0%, 0%, 45%);
     margin-left: auto;
-    width: 55%;
-    height: auto;
     display: flex;
     justify-content: center;
   }
@@ -136,6 +135,29 @@
       }
       p{
           @include paragraph($violet, $com, 1.0rem, normal, 110%);
+      }
+      .heder-img{
+          padding-top: 5px;
+      }
+  }
+  }
+
+  @media (max-width: 500px){
+    .header{
+      min-height: 600px;
+    }
+    .heder-position{
+      @include position(absolute, 0%, 0%, 0%, 0%);
+    }
+    .heder-content{
+      padding-right: 5%;
+      padding-top: 40%;
+      h2{
+          @include paragraph($white, $com, 1.6rem, bold, 170%);
+      }
+      p{
+          @include paragraph($white, $com, 1.1rem, normal, 110%);
+          padding: 10px 0;
       }
       .heder-img{
           padding-top: 5px;

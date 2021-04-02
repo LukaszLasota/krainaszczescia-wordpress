@@ -4,14 +4,15 @@
         position: absolute;
         bottom: 100px;
         right: 60px;
+        @media (max-width: 600px){
+            bottom: 100px;
+            right: 10px;
+            width: 70px;
+        }
     }
 }
 
-#site-id-3{
-    .footer-img{
-        padding: 370px 0 0 0;
-    }
-}
+
 
 .footer-img{
     padding: 270px 0 0 0;
@@ -65,6 +66,38 @@
     }
 }
 
+@media (max-width: 600px){
+    .footer{
+        background: linear-gradient(#9714f5, #690390);
+        height: 1500px;
+    }
+    .footer-img{
+        display: none;
+    }
+
+    .footer-one:nth-child(1){
+        width: 100%;
+    }
+    
+    .footer-one:nth-child(2){
+        width: 100%;
+    }
+    .footer-one:nth-child(3){
+        width: 100%;
+    }
+}
+
+#site-id-3{
+    .footer-img{
+        padding: 370px 0 0 0;
+    }
+    @media (max-width: 600px){
+        .footer{
+            background: linear-gradient(#e40656, #e40656);
+        }
+    }
+}
+
 .footer-one{
     p{
         width: 100%;
@@ -77,6 +110,9 @@
         padding: 5px 0;
         margin: 0;
         letter-spacing: 1px;
+        @media (max-width: 600px){
+            text-align: center;
+        }
     }
     a{
         text-decoration: none;
@@ -84,6 +120,10 @@
         margin: 0;
         width: 100%;
         color: $white;
+        @media (max-width: 600px){
+            display: flex;
+            justify-content: center;
+        }
     }
     .footer-three-paragraph{
         text-transform: none;
@@ -103,13 +143,20 @@
         p{
             width: 46%;            
         }
-        
         @media (max-width: 1025px){
             .footer-one-left{
                 width: 38%;
             }
             p{
                 width: 50%;            
+            }
+        }
+        @media (max-width: 600px){
+            .footer-one-left{
+                width: 45%;
+            }
+            p{
+                width: 45%;            
             }
         }
     }
@@ -119,6 +166,10 @@
     display: flex;
     justify-content: center;
     padding-left: 20px;
+    @media (max-width: 600px){
+        padding-left: 0px;
+        padding-top: 15px;
+    }
 }
 
 .footer-three-content .footer-three-img:nth-child(1){
@@ -127,6 +178,10 @@
 
 .footer-one-img, .footer-two-img, .footer-three-img{
     width: 100%;
+    @media (max-width: 600px){
+        display: flex;
+        justify-content: center;
+    }
     img{
         height: 30px;
         width: auto;
@@ -141,6 +196,10 @@
     display: flex;
     align-items: flex-end;
     padding-bottom: 15px;
+    @media (max-width: 600px){
+        justify-content: center;
+        align-items: center;
+    }
     img{
         height: 30px;
         width: auto;

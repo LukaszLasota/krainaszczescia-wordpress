@@ -2,7 +2,7 @@
 
 function showPayment(){ ?>
 
-<section class="payment"  style="background-image: url(<?php echo get_theme_file_uri('/images/oplaty/1.png'); ?>);">
+<section class="payment" >
     <div class="payment-position">
     
         <div class="payment-space-one"></div>
@@ -12,7 +12,7 @@ function showPayment(){ ?>
         <div class="payment-space-two"></div>
         
         <?php showFees(); ?>
-
+            
     </div>
 </section>
 

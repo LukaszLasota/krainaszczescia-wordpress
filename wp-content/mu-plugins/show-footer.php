@@ -2,8 +2,8 @@
 
 <footer class="footer">
 
-<div class="footer-img">
-        <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">
+    <div class="footer-img">       
+        <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">  
     </div>
 
 <div class="site-footer">

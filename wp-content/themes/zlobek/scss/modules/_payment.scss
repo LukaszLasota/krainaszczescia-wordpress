@@ -1,6 +1,7 @@
 /*Basic css section*/
 .payment{
     // background: linear-gradient(-70deg, #ffe157, #fdcc1e, #fcb90d, #fcaa1f);
+    background-image: url('./../images/oplaty/1.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -70,8 +71,61 @@
 
 @media (max-width: 480px){
     .payment{
+        margin-top: 150px;
         min-height: auto;
+        background-image: none;
+        // border: 1px solid;
+        position: relative;
+        background: linear-gradient( #ffe158, #fca821);
+        border-radius: 20px;
+        // z-index: 20;
+        // background-image: url('./../images/oplaty/13.png');
+        //  &::before{
+        // content:url('./../images/oplaty/11.png'); /* with class ModalCarrot ??*/
+        // position: absolute; /*or absolute*/
+        // z-index: 90; /*a number that's more than the modal box*/
+        // top: 0;
+        // // left: 0;
+        // // right: 0;
+        // // bottom: 0;
+        // content: '';
+        // background: url('./../images/oplaty/11.png');
+        // width: 100%;
+        // height: auto;
+        // display: block;
+        // position: absolute;
+        // width: 100%;
+        //     content: " ";
+        //     background-image: url('./../images/oplaty/11.png');
+        //     // background-position: top;
+        //     background-repeat: no-repeat;
+        //     background-size: 100%;
+        //     position: absolute;
+        //     left: 0px;
+        //     top: 0%;
+        //     height: 200px;
+        //     z-index: 90;
+            // }
+    // &::after{
+    // //     content:url('./../images/oplaty/12.png'); /* with class ModalCarrot ??*/
+    // //     position: absolute; /*or absolute*/
+    // //     width: 100%;
+    // //     z-index: 10; /*a number that's more than the modal box*/
+       
+    // //     left: 0;
+    // //     right: 0;
+    // //     bottom: 0;
+    //     content: '';
+    //     // position: absolute;
+    //     // bottom: 0;
+    //     // left: 0;
+    //     background: linear-gradient(
+    //     -135deg, yellow 50%, transparent 50%)
+    //     50% / 50% 50%
+    //     no-repeat;
+    // }
     }
+
     .payment-space-one{
         padding: 40px 0;
         width: 100%;
@@ -139,6 +193,12 @@
             &::before{
                 color: $red;
             }
+        }
+    }
+    @media (max-width: 600px){
+        .payment{
+            margin-top: 150px;
+            background: linear-gradient( #00c6d5, #0068fa);
         }
     }
   }

@@ -1,6 +1,6 @@
 <?php 
-// showContact();
-// showFooter();
+showContact();
+showFooter();
 wp_footer();
 ?>
 </body>
