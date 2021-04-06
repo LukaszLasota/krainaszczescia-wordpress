@@ -2,7 +2,7 @@
 
 function showHeaderNew($args = NULL){
 
-if(get_bloginfo( 'name' ) == 'przedszkole'){
+if(get_current_blog_id() == 2){
     $args['alt'] = 'Strona główna Przedszkola Kraina Szczęścia';
     $args['title'] = 'Przedszkole Kraina Szczęścia';
 }else{
@@ -15,15 +15,21 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
     
     <nav class="main-nav">
       <div class="main-nav-links">
-          <div class="main-nav-back">
-              <a href="<?php get_site_url(); ?>">
-                <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+      <div class="main-nav-back">
+              <a href="http://new.krainaszczescia.edu.pl/">
+                <picture>
+                  <source srcset="<?php echo get_theme_file_uri('/images/3.png'); ?>" media="(max-width: 1024px)">
+                  <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">
+                </picture>
               </a>
-          </div>
+            </div>
 
-            <h1 class="logo" title="<?php echo $args['title']; ?>">
+          <h1 class="logo" title="<?php echo $args['title']; ?>">
               <a href="/">
-                <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
+                <picture>
+                  <source srcset="<?php echo get_theme_file_uri('/images/menu/logo.png'); ?>" media="(max-width: 1024px)">
+                  <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
+                </picture>
               </a>
             </h1>
       </div>
@@ -45,8 +51,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
           </ul>
         </div>
         <div class="menu-login">
-
-        <?php if(is_user_logged_in()) { ?>
+            <?php if(is_user_logged_in()) { ?>
 
             <div class="login-btn">
                 <a href="<?php echo wp_logout_url();  ?>">
@@ -60,7 +65,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
               </div>
 
             <?php } else { ?>
-               
+              
               <div class="login-btn">
                 <a href="<?php echo wp_login_url();  ?>">
                   <img src="<?php echo get_theme_file_uri('/images/menu/6.png'); ?>" alt="">
@@ -68,13 +73,15 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
               </div>
               <div class="login-avatar">
                 <a href="<?php echo wp_login_url();  ?>">
-                  <img src="<?php echo get_theme_file_uri('/images/menu/3.png'); ?>" alt="">
+                  <picture>
+                    <source srcset="<?php echo get_theme_file_uri('/images/menu/4.png'); ?>" media="(max-width: 1024px)">
+                    <img src="<?php echo get_theme_file_uri('/images/menu/3.png'); ?>" alt="">
+                  </picture>
                 </a>
               </div>
 
             <?php } ?> 
-
-            </div>
+          </div>
 
         
           

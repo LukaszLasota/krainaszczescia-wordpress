@@ -1,6 +1,6 @@
 <?php function showAboutAsPage($args = NULL){
 
-if(get_bloginfo( 'name' ) == 'przedszkole'){
+if(get_current_blog_id() == 2){
     $args['alt'] = 'Informacje o nas - Przedszkole Kraina Szcześcia';
 }else{
     $args['alt'] = 'Informacje o nas - Żłobek Kraina Szcześcia';
@@ -16,7 +16,7 @@ if(get_bloginfo( 'name' ) == 'przedszkole'){
             <p><?php the_content(); ?></p>
         </div>
         
-        <div class="about-us-wrapper-two" style="background-image: url(<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>);">
+        <div class="about-us-wrapper-two" style="background-image: url(<?php echo get_theme_file_uri('/images/o-nas/2.1.png'); ?>);">
             <h2 class='main-h2 main-h2-two' title="<?php echo $args['alt']; ?>">
                     <img src="<?php echo get_theme_file_uri('/images/o-nas/6.png'); ?>" alt="<?php echo $args['alt']; ?>">
             </h2>

@@ -1,6 +1,6 @@
 <?php function showParrentsPage($args = NULL){
 
-if(get_bloginfo( 'name' ) == 'przedszkole'){
+if(get_current_blog_id() == 2){
     $args['alt'] = 'Dla rodzica - Przedszkole Kraina Szcześcia';
 }else{
     $args['alt'] = 'Dla rodzica - Żłobek Kraina Szcześcia';

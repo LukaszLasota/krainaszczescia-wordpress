@@ -2,7 +2,7 @@
 
 function showAbout($args = NULL){
 
-if(get_bloginfo( 'name' ) == 'przedszkole'){
+if(get_current_blog_id() == 2){
     $args['paragraph'] = 'Przedszkole „Kraina Szczęścia” jest przyjaznym miejscem dla dzieci i ich rodzin. Działania prowadzone przez zatrudnionych nauczycieli i specjalistów ukierunkowane są na rozbudzanie ciekawości świata, zdobywanie wiedzy i kształtowania nowych umiejętności dzieci niezbędnych do podjęcia nauki w szkole, odkrywania i rozwijania naturalnych talentów a także samodzielności. Rozumiemy przez to wysokie standardy pracy z dziećmi, współpracę z rodzicami, współpracę ze specjalistami również z innych placówek, a także podnoszenie kwalifikacji i rozwój pracowników przedszkola.Głównym założeniem naszej placówki jest wspieranie harmonijnego i wszechstronnego rozwoju każdego dziecka, również ze specjalnymi potrzebami edukacyjnymi, zgodnie z jego możliwościami, zainteresowaniami i wrodzonym potencjałem. Wsparcie to realizujemy w trakcie...';
     $args['alt'] = 'Informacje o nas - Przedszkole Kraina Szczęścia';
 }else{

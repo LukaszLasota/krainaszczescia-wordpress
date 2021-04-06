@@ -31,7 +31,7 @@ function showTuition($offer = NULL, $offerTwo = NULL, $offerThree = NULL){
         </h2>
 
         <?php 
-        if(get_bloginfo( 'name' ) == 'przedszkole'){
+        if(get_current_blog_id() == 2){
             ?>
        <div class="payment-h4">
             <span>

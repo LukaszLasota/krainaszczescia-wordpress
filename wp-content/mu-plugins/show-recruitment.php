@@ -2,7 +2,7 @@
 
 function showRecruitment($args = NULL){
 
-if(get_bloginfo( 'name' ) == 'przedszkole'){
+if(get_current_blog_id() == 2){
     $args['shortcode'] = do_shortcode('[contact-form-7 id="76" title="Formularz zgłoszeniowy do przedszkola"]');
 }else{
     $args['shortcode'] = do_shortcode('[contact-form-7 id="6" title="Formularz zgłoszeniowy do zlobka"]');

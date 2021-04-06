@@ -1,6 +1,6 @@
 <?php function showMainMenu($args = NULL){ 
     
-    if(get_bloginfo( 'name' ) == 'przedszkole'){
+    if(get_current_blog_id() == 2){
         $args['alt'] = 'Strona główna Przedszkola Kraina Szczęścia';
         $args['title'] = 'Przedszkole Kraina Szczęścia';
     }else{
@@ -67,7 +67,10 @@
                  
                 <div class="login-btn">
                   <a href="<?php echo wp_login_url();  ?>">
-                    <img src="<?php echo get_theme_file_uri('/images/menu/6.png'); ?>" alt="">
+                    <picture>
+                      <source srcset="<?php echo get_theme_file_uri('/images/menu/8.png'); ?>" media="(max-width: 1024px)">
+                      <img src="<?php echo get_theme_file_uri('/images/menu/6.png'); ?>" alt="">
+                    </picture>
                   </a>
                 </div>
                 <div class="login-avatar">

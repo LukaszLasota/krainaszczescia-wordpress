@@ -1,6 +1,6 @@
 <?php function showArchiveCareerPage($args = NULL){
 
-if(get_bloginfo( 'name' ) == 'przedszkole'){
+if(get_current_blog_id() == 2){
     $args['alt'] = 'Kariera - Przedszkole Kraina Szcześcia';
 }else{
     $args['alt'] = 'Kariera - Żłobek Kraina Szcześcia';
