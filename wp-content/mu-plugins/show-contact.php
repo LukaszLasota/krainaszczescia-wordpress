@@ -1,9 +1,10 @@
 <?php function showContact($args = NULL){ ?>
     
-        <section class="contact" id="six">
-        <h2 class='main-h2' title="Kontakt przedszkole Kraina Szczęścia">
-            <img src="<?php echo get_theme_file_uri('/images/kontakt/3.png'); ?>" alt="Kontakt przedszkole Kraina Szcześcia">
-        </h2>
+<section class="contact" id="six">
+    
+    <h2 class='main-h2' title="Kontakt przedszkole Kraina Szczęścia">
+        <img src="<?php echo get_theme_file_uri('/images/kontakt/3.png'); ?>" alt="Kontakt przedszkole Kraina Szcześcia">
+    </h2>
     <div class="contact-main">
         
         <div class="contact-one" >
