@@ -33,7 +33,7 @@ if(get_current_blog_id() == 2){
                 </a>
             </div>
             <div class="about-img-mobile">
-                <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>" alt="">
+                <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>" alt="Zdjęcie dziecka">
             </div>
             
         </div>

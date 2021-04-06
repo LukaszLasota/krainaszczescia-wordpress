@@ -5,7 +5,7 @@
 .about-position{
     display: flex;
     flex-wrap: wrap;
-    scroll-margin-top: $scroll-margin-top;
+    // scroll-margin-top: $scroll-margin-top;
 }
 .about-content{
     width: 100%;
@@ -13,7 +13,7 @@
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 700px;
+    min-height: 700px;
     .main-h2{
         padding: 10px 0 35px 10px;
         img{
@@ -99,7 +99,7 @@
 
 @media (max-width: 1400px){
 .about-content{
-    height: 700px;
+    min-height: 700px;
     .about-text{
         p{
             width: 50%;
@@ -117,7 +117,7 @@
         padding: 50px 0 100px;
     }
     .about-content{
-        height: 700px;
+        min-height: 700px;
         .about-text{
             p{
                 width: 45%;
@@ -132,7 +132,7 @@
         padding: 30px 0 200px;
     }
     .about-content{
-        height: 470px;
+        min-height: 470px;
         .about-text{
             p{
                 width: 55%;
@@ -150,8 +150,8 @@
 
 @media (max-width: 480px){
     .about{
-        padding: 30px 0 1000px;
-        height: auto;
+        padding: 30px 0 0px;
+        min-height: auto;
     }
     .about-content{
         width: 100%;
@@ -172,8 +172,8 @@
         }
         .about-img-mobile{
             display: block;
-            padding: 70px 0;
-            margin-bottom: 100px;
+            padding: 70px 0 30px;
+            // margin-bottom: 100px;
             img{
                 width: 100%;
             }
