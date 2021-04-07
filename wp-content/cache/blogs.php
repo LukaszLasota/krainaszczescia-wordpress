@@ -1,1 +1,0 @@
-{"krainaszczescia.local":"m1","przedszkole.krainaszczescia.local":"m2","zlobek.krainaszczescia.local":"m3"}

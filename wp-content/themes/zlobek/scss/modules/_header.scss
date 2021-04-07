@@ -57,13 +57,12 @@
     }
     
 }
-
   .header-new{
     width: 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 300px;
+    min-height: 220px;
     position: fixed;
     z-index: 100;
   }
@@ -105,6 +104,9 @@
 
 
   @media (max-width: 1200px){
+    .header-new{
+      min-height: 120px;
+    }
     .header{
       min-height: 680px;
     }
@@ -124,6 +126,9 @@
   }
 
   @media (max-width: 800px){
+    .header-new{
+      min-height: 100px;
+    }
     .header{
       min-height: 550px;
     }
