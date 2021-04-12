@@ -16,7 +16,7 @@ if(get_current_blog_id() == 2){
     <nav class="main-nav">
       <div class="main-nav-links">
       <div class="main-nav-back">
-              <a href="http://krainaszczescia.edu.pl/">
+              <a href="https://krainaszczescia.edu.pl/">
                 <picture>
                   <source srcset="<?php echo get_theme_file_uri('/images/3.png'); ?>" media="(max-width: 1024px)">
                   <img src="<?php echo get_theme_file_uri('/images/menu/1.png'); ?>" alt="">

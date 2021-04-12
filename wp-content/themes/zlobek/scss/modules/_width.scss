@@ -18,18 +18,18 @@
     }
   }
 
-  .about-position, .career, .contact, .payment-one, .payment-two, .recruitment{
-    scroll-margin-top: $scroll-margin-top;
-  }
+  // .about-position, .career, .contact, .payment-one, .payment-two, .recruitment{
+  //   scroll-margin-top: $scroll-margin-top;
+  // }
 
-  @media (max-width: 1024px){
-    .about-position, .career, .contact, .payment-one, .payment-two, .recruitment{
-      scroll-margin-top: $scroll-margin-top-medium;
-    }
-  }
+  // @media (max-width: 1024px){
+  //   .about-position, .career, .contact, .payment-one, .payment-two, .recruitment{
+  //     scroll-margin-top: $scroll-margin-top-medium;
+  //   }
+  // }
 
-  @media (max-width: 600px){
-    .about-position, .career, .contact, .payment-one, .payment-two, .recruitment{
-      scroll-margin-top: $scroll-margin-top-small;
-    }
-  }
+  // @media (max-width: 600px){
+  //   .about-position, .career, .contact, .payment-one, .payment-two, .recruitment{
+  //     scroll-margin-top: $scroll-margin-top-small;
+  //   }
+  // }

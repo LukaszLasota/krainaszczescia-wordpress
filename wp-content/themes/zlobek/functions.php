@@ -5,9 +5,9 @@ function nursery_files(){
     if(strstr($_SERVER['SERVER_NAME'], 'krainaszczescia.local')){
         wp_enqueue_script('main-nursery-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
-        wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.3d3b4100f8eca0abe9c7.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.3d3b4100f8eca0abe9c7.css'));
+        wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
+        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.ed3cd3296ba62a30928e.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ed3cd3296ba62a30928e.css'));
     }
     
     wp_localize_script('main-nursery-js', 'nurseryData', array(
@@ -144,7 +144,7 @@ function ourHeaderUrl(){
 // add_action('login_enqueue_scripts', 'ourLoginCSS' );
 
 // function ourLoginCSS(){
-//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.3d3b4100f8eca0abe9c7.css'));
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ed3cd3296ba62a30928e.css'));
 //     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 // }
 

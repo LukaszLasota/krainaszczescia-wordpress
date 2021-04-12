@@ -4,7 +4,8 @@
     margin: 0;
     position: relative;
     @media (max-width: 600px){
-            min-height: 950px;
+            min-height: 150vh;
+            // z-index: 50;
             // background: url('./../images/kontakt/14.png');
             // background-position: top center;
             // background-repeat: no-repeat;
@@ -64,6 +65,14 @@
         justify-content: center;
         padding: 50px 0;
     }
+    @media (max-width: 800px){
+        .main-h2{
+            img{
+                width: 30%;
+            }
+        }
+    }
+    
     @media (max-width: 600px){
         .main-h2{
             padding: 50px 0;
@@ -147,8 +156,12 @@
                 font-size: 1.2rem;
                 font-style: $com;
                 font-weight: 400;
+                @media (max-width: 800px){
+                    font-size: 1.0rem;
+                }
                 @media (max-width: 600px){
                     margin: 20px 0 5px;
+                    font-size: 1.2rem;
                 }
             }
             .content-one-img{
@@ -176,6 +189,12 @@
                     font-size: 1.1rem;
                     font-style: $com;
                     font-weight: 300;
+                    @media (max-width: 800px){
+                        font-size: 0.9rem;
+                    }
+                    @media (max-width: 600px){
+                        font-size: 1.1rem;
+                    }
                 }
                 a{
                     text-decoration: none;
@@ -201,7 +220,7 @@
                 }
             }
         }
-       
+        
     }
     @media (max-width: 1600px){
         .contact{
@@ -242,12 +261,33 @@
             }
         } 
     }
+
+    @media (max-width: 800px){
+        .contact{
+            .contact-one{
+                width: 90%;
+                left: 50%;
+                .content{
+                    width: 60%;
+                    padding-top: 15%;
+                    padding-left: 10%;
+                }
+                .content-one{
+                    h4{
+                        color: $red;
+                    }
+                }
+            }
+    }
+   
+}
+
     @media (max-width: 600px){
         .contact{
-            height: 900px;
-            background: linear-gradient(#00b7d5, #0070f4);
+            // height: 900px;
+            // background: linear-gradient(#00b7d5, #0070f4);
             .contact-one{
-                width: 95%;
+                width: 100%;
                 left: 50%;
                 .content{
                     width: 85%;
@@ -257,6 +297,7 @@
             }
         } 
     }
+
 }
 
 

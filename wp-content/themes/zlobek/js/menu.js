@@ -37,7 +37,6 @@ if(menuBackground){
 }
 
 
-
 // Hambureger 
 
 const hamburger = document.querySelector('.hamburger');
@@ -51,19 +50,25 @@ const handleClick = () => {
   hamburger.setAttribute('aria-expanded', hamburger.classList.contains('hamburger--active'));
   nav.classList.toggle('navigation--active');
   
-  if(scrollposTwo < 10){
-    mainNav.classList.add("main-nav-bg");
-  }
+//   if(scrollposTwo < 10){
+//     mainNav.classList.add("main-nav-bg");
+//   }
 }
 
 hamburger.addEventListener('click', handleClick);
 
-//Add background-color to menu
 
-// function addClassOnScroll() {
-//   mainNav.classList.add("main-nav-bg");
-// }
+//remove menu after click
+const menuLinks = document.querySelectorAll(".navigation ul a");
+ 
+for (const link of menuLinks) {
+  link.addEventListener("click", clickHandlerRemove);
+}
+ 
+function clickHandlerRemove() {
+//   e.preventDefault();
+  hamburger.classList.remove('hamburger--active');
+  hamburger.removeAttribute('aria-expanded', hamburger.classList.contains('hamburger--active'));
+  nav.classList.remove('navigation--active');
+}
 
-// function removeClassOnScroll() {
-//   mainNav.classList.remove("main-nav-bg");
-// }

@@ -109,78 +109,84 @@
 
 
 @media (max-width: 800px){
-    .career{
-        padding: 120px 0 200px;
-        .main-h2{
-            padding: 10px 0 10px;
-            img{
-                width: 35%;
+    #site-id-3, #site-id-2{
+        .career{
+            padding: 120px 0 200px;
+            .main-h2{
+                padding: 10px 0 10px;
+                img{
+                    width: 35%;
+                }
             }
-        }
-        .career-post-header{
-            img{
-                width: 90px;
-                bottom: -10px;
-                left: -20px;
+            .career-post-header{
+                img{
+                    width: 90px;
+                    bottom: -10px;
+                    left: -20px;
+                }
+                h3{
+                    padding: 20px 0 0px;
+                    @include paragraph($violet, $com, 1.9rem, normal, 110%);
+                    width: 100%;
+                }
             }
-            h3{
-                padding: 20px 0 0px;
-                @include paragraph($violet, $com, 1.9rem, normal, 110%);
-                width: 100%;
+            .career-no-recrutation{
+                h3{
+                    @include paragraph($black, $com, 2.0rem, normal, 110%);
+                }
             }
-        }
-        .career-no-recrutation{
-            h3{
-                @include paragraph($black, $com, 2.0rem, normal, 110%);
+            h4{
+               
+                @include paragraph($violet, $com, 1.4rem, normal, 110%);
+                background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
+                background-size: 140px 3px;
             }
-        }
-        h4{
-           
-            @include paragraph($violet, $com, 1.4rem, normal, 110%);
-            background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
-            background-size: 140px 3px;
-        }
-        p{
-            @include paragraph($black, $com, 1.2rem, normal, 110%);
+            p{
+                @include paragraph($black, $com, 1.2rem, normal, 110%);
+            }
         }
     }
+    
 }
 
 
 @media (max-width: 480px){
-    .career{
-        padding: 120px 0 200px;
-        .main-h2{
-            padding: 10px 0 10px;
-            img{
-                width: 65%;
+    #site-id-3, #site-id-2{
+        .career{
+            padding: 120px 0 200px;
+            .main-h2{
+                padding: 10px 0 10px;
+                img{
+                    width: 65%;
+                }
             }
-        }
-        .career-post-header{
-            img{
-                width: 90px;
-                bottom: -10px;
-                left: -10px;
+            .career-post-header{
+                img{
+                    width: 90px;
+                    bottom: -10px;
+                    left: -10px;
+                }
+                h3{
+                    padding: 20px 0 0px;
+                    @include paragraph($violet, $com, 1.6rem, normal, 110%);
+                    width: 100%;
+                }
             }
-            h3{
-                padding: 20px 0 0px;
-                @include paragraph($violet, $com, 1.6rem, normal, 110%);
-                width: 100%;
+            .career-no-recrutation{
+                h3{
+                    @include paragraph($black, $com, 2.0rem, normal, 110%);
+                }
             }
-        }
-        .career-no-recrutation{
-            h3{
-                @include paragraph($black, $com, 2.0rem, normal, 110%);
+            h4{
+               
+                @include paragraph($violet, $com, 1.3rem, normal, 110%);
+                background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
+                background-size: 140px 3px;
             }
-        }
-        h4{
-           
-            @include paragraph($violet, $com, 1.3rem, normal, 110%);
-            background: linear-gradient(to right, $lightYellow 0%, $darkYellow 100%) left bottom no-repeat; 
-            background-size: 140px 3px;
-        }
-        p{
-            @include paragraph($black, $com, 1.2rem, normal, 110%);
+            p{
+                @include paragraph($black, $com, 1.2rem, normal, 110%);
+            }
         }
     }
+   
 }

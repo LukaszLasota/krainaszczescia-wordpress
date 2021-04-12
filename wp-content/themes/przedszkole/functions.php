@@ -5,9 +5,9 @@ function kindergarten_files(){
     if(strstr($_SERVER['SERVER_NAME'], 'krainaszczescia.local')){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
-        wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.346d0a9d878e6cffc9bf.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.b5a2adc5d9630685ba91.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.b5a2adc5d9630685ba91.css'));
+        wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.a60ad1094e04412b7ea8.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.a60ad1094e04412b7ea8.css'));
     }
     
     wp_localize_script('main-kindergarten-js', 'kindergartenData', array(
@@ -145,7 +145,7 @@ function ourHeaderUrl(){
 // add_action('login_enqueue_scripts', 'ourLoginCSS' );
 
 // function ourLoginCSS(){
-//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.b5a2adc5d9630685ba91.css'));
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.a60ad1094e04412b7ea8.css'));
 //     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 // }
 

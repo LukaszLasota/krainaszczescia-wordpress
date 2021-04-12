@@ -3,7 +3,11 @@
 <footer class="footer">
 
     <div class="footer-img">       
-        <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">  
+        <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">
+        <!-- <picture>
+            <source srcset="<?php echo get_theme_file_uri('/images/kontakt/16.png'); ?>" media="(max-width: 600px)">
+            <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">
+        </picture>   -->
     </div>
 
 <div class="site-footer">
@@ -14,7 +18,7 @@
         </div>
         <div class="footer-one-text">
             <p><a href="/">Dom</a></p>
-            <p><a href="#two">o nas</a></p>
+            <p><a href="<?php echo site_url( '/o-nas'); ?>">o nas</a></p>
             <p><a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">aktualności</a></p>
             <p><a href="#three">oferta</a></p>
             <p><a href="#four">opłaty</a></p>

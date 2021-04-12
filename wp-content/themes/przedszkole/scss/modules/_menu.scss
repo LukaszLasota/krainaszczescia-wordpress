@@ -126,6 +126,42 @@
 
   }
 
+  @media (max-width: 1400px){
+    .main-nav-links{
+      .main-nav-back{
+        width: 20px;
+        padding: 0px 5px;
+      }
+      .logo{
+        padding: 0 15px;
+        img{
+          width: 70px;
+        }
+      }
+    }
+    .navigation{
+      padding: 0 10px;
+      .navigation-item{
+        margin: 0;
+        padding: 0;
+        a{
+          font-size: 1.0rem;
+          padding: 5px 10px;
+        }
+      }
+    }
+    .menu-login{
+      .login-btn{
+        width: 80px;
+      }
+      .login-avatar{
+        width: 30px;
+        padding: 0px 15px;
+      }
+    }
+
+  }
+
   @media (max-width: 1200px){
     .nav-bg{
       width: 100%;
