@@ -399,15 +399,15 @@
         text-align: left; 
         h3, p{
             color: $violet;
-            font-style: $com;
-            font-size: 1.4rem;
+            font-family: $com;
+            font-size: 1.3rem;
             font-weight: normal;
             width: 82%;
             margin: 5px 0;
-            letter-spacing: 3px;
+            letter-spacing: 1px;
         }
         h3{
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             margin: 5px auto;
         }
         p{
@@ -447,7 +447,7 @@
         }
         p{
             width: 89%;
-            font-style: $com;
+            font-family: $com;
             font-size: 1.1rem;
             text-align: left;
             margin: 10px 0;
@@ -616,12 +616,12 @@
         .div-header{
             padding-top: 10px;
             h3, p{
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 width: 90%;
                 margin: 10px 15px;
             }
             h3{
-                font-size: 1.7rem;
+                font-size: 1.5rem;
             }
         }
         .div-header-img{

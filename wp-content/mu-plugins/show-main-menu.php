@@ -44,7 +44,7 @@
                 <li class="navigation-item"><a href="#four">opłaty</a></li>
                 <li class="navigation-item"><a href="#five">rekrutacja</a></li>
                 <li class="navigation-item"><a href="<?php echo site_url( '/dla-rodzica'); ?>">dla rodzica</a></li>
-                <li class="navigation-item"><a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></li></li>
+                <li class="navigation-item"><a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></li>
                 <li class="navigation-item"><a href="#six">kontakt</a></li>
             </ul>
          </div>
@@ -89,7 +89,7 @@
          
           
             
-        </div>
+        
         <button class="hamburger" aria-expanded="false">
             <span class="sr-only">Otwórz/zamknij menu</span>
             <span class="hamburger-box">

@@ -33,11 +33,11 @@ function showFees(){?>
                     <span>
                         <img src="<?php echo get_theme_file_uri('/images/oplaty/4.png'); ?>" alt="">
                     </span>
-                    <p>opłata wpisowa za drugie i kolejne dziecko wynosi 75%, jeśli rodzeństwo uczęszcza do Przedszkola lub Żłobka „Kraina Szczęścia”</p> 
+                    <p>opłata wpisowa za drugie i kolejne dziecko wynosi 75%, jeśli rodzeństwo aktualnie uczęszcza do Przedszkola lub Żłobka „Kraina Szczęścia”</p> 
                 </div>
                 <div class="div-body">
                     <span>
-                        <img src="" alt="">
+                        <img>
                     </span>
                     <p class="bold">Opłata wpisowa w całości przeznaczana jest na:</p> 
                 </div>
@@ -72,7 +72,8 @@ function showFees(){?>
 
             <div class="payment-two-div">
                 <div class="div-header">
-                    <h3 class="h3-padding" >Opłata miesięczna</h3>
+                    <h3 class="h3" >Czesne miesięczne</h3>
+                    <p>(opłata stała w roku kalendarzowym 2021)</p>
                     <div class="div-header-img">
                         <img class="div-header-img-one" src="<?php echo get_theme_file_uri('/images/oplaty/7.png'); ?>" alt="">
                         <img class="div-header-img-two" src="<?php echo get_theme_file_uri('/images/oplaty/8.png'); ?>" alt="">
@@ -88,7 +89,7 @@ function showFees(){?>
                     <span>
                         <img src="<?php echo get_theme_file_uri('/images/oplaty/4.png'); ?>" alt="">
                     </span>
-                    <p>czesne za drugie i kolejne dziecko pomniejszane jest o kwotę 150 zł (nie dotyczy dzieci z orzeczeniem)</p> 
+                    <p>czesne za drugie i kolejne dziecko pomniejszane jest o kwotę 150 zł (nie dotyczy dzieci, jeżeli jedno z rodzeństwa nie płaci czesnego  z racji posiadanego orzeczenia  wydanego przez Poradnię Psychologiczno – Pedagogiczną.)</p> 
                 </div>
                 
             </div>
@@ -127,13 +128,13 @@ function showFees(){?>
                     <p>w przypadku wysłania wiadomości SMS w dniu nieobecności dziecka do godziny 8.00 na nr telefonu grupy przypisanej dziecku </p> 
                 </div>
 
-                <?php if(get_bloginfo( 'name' ) == 'przedszkole'){ ?>
+                <?php if((get_current_blog_id() == 2)){ ?>
                     
                     <div class="div-body">
                         <span>
                             <img src="<?php echo get_theme_file_uri('/images/kontakt/4.png'); ?>" alt="">
                         </span>
-                        <p>885 755 008 – ZUCHY <br> 885 755 007- STARSZAKI </p>
+                        <p>885 755 008 – ZUCHY <br> 885 755 007 - STARSZAKI </p>
                     </div>
 
                 <?php } else { ?>
@@ -142,7 +143,7 @@ function showFees(){?>
                         <span>
                             <img src="<?php echo get_theme_file_uri('/images/kontakt/4.png'); ?>" alt="">
                         </span>
-                        <p>885 755 006 – MALUCHY <br> 885 755 004- KRASNALE </p>
+                        <p>885 755 006 – MALUCHY <br> 885 755 004 - KRASNALE </p>
                     </div>
 
                 <?php } ?>

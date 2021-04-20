@@ -19,11 +19,10 @@ function showTuition($offer = NULL, $offerTwo = NULL, $offerThree = NULL){
     );
 
     ?>
-<div class="shape" data-name="triangle1" data-type="linear">
+<!-- <div class="shape" data-name="triangle1" data-type="linear">
   <div class="preview">
     <div class="graph"></div>
-    
-  </div>
+  </div> -->
 
 <div class="payment-one" id="three">
         <h2 class='main-h2' title="Informacje o nas - Przedszkole Kraina Szcześcia">

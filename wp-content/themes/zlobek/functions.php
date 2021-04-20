@@ -6,8 +6,8 @@ function nursery_files(){
         wp_enqueue_script('main-nursery-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.ed3cd3296ba62a30928e.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ed3cd3296ba62a30928e.css'));
+        wp_enqueue_script('main-nursery-js', get_theme_file_uri('/bundled-assets/scripts.ddfb1660270df6cf66cc.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ddfb1660270df6cf66cc.css'));
     }
     
     wp_localize_script('main-nursery-js', 'nurseryData', array(
@@ -144,11 +144,11 @@ function ourHeaderUrl(){
 // add_action('login_enqueue_scripts', 'ourLoginCSS' );
 
 // function ourLoginCSS(){
-//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ed3cd3296ba62a30928e.css'));
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ddfb1660270df6cf66cc.css'));
 //     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 // }
 
-add_filter('login_headertitle', 'ourLoginTitle');
+add_filter('login_headertext', 'ourLoginTitle');
 
 function ourLoginTitle(){
     return get_bloginfo('name');

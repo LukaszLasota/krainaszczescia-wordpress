@@ -29,7 +29,6 @@
     } 
 }
 
-
 @media (max-width: 600px){
     .footer-img{
         padding: 0px 0 0 0;
@@ -86,7 +85,7 @@
 @media (max-width: 600px){
     .footer{
         // background: linear-gradient(#9714f5, #690390);
-        min-height: 220vh;
+        min-height: 215vh;
         // justify-content: end;
         // align-items: flex-end;
     }
@@ -133,7 +132,7 @@
         display: block;
         color: $white;
         font-size: 1.0rem;
-        font-style: $com;
+        font-family: $com;
         font-weight: 300;
         text-transform: uppercase;
         padding: 5px 0;
@@ -144,7 +143,7 @@
         }
         @media (max-width: 600px){
             text-align: center;
-            font-size: 1.0rem;
+            font-size: 0.9rem;
         }
     }
     a{

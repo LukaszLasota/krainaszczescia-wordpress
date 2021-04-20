@@ -15,27 +15,26 @@ if(get_current_blog_id() == 2){
 
 ?>
 <main>
- <section class="about" >
+    <section class="about" >
         <div class="about-position" id="two" >
-      
-        <div class="about-content">
-            <h2 class='main-h2' title="<?php echo $args['alt']; ?>">
-                <img src="<?php echo get_theme_file_uri('/images/o-nas/1.png'); ?>" alt="<?php echo $args['alt']; ?>">
-            </h2>
-            <div class="about-text">
-            <!-- <div class="about-image-div"></div> -->
-                <p><?php echo $args['paragraph']; ?></p>
+            <div class="about-content">
+                <h2 class='main-h2' title="<?php echo $args['alt']; ?>">
+                    <img src="<?php echo get_theme_file_uri('/images/o-nas/1.png'); ?>" alt="<?php echo $args['alt']; ?>">
+                </h2>
+                <div class="about-text">
+                    <!-- <div class="about-image-div"></div> -->
+                    <p><?php echo $args['paragraph']; ?></p>
+                </div>
+                <div class="about-btn">
+                    <a href="<?php echo site_url( '/o-nas'); ?>">
+                        <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/4.png'); ?>" alt="">
+                        <img class="about-btn-two" src="<?php echo get_theme_file_uri('/images/o-nas/3.png'); ?>" alt="">
+                    </a>
+                </div>
+                <div class="about-img-mobile">
+                    <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>" alt="Zdjęcie dziecka">
+                </div>
             </div>
-            <div class="about-btn">
-                <a href="<?php echo site_url( '/o-nas'); ?>">
-                    <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/4.png'); ?>" alt="">
-                    <img class="about-btn-two" src="<?php echo get_theme_file_uri('/images/o-nas/3.png'); ?>" alt="">
-                </a>
-            </div>
-            <div class="about-img-mobile">
-                <img class="about-btn-one" src="<?php echo get_theme_file_uri('/images/o-nas/2.png'); ?>" alt="Zdjęcie dziecka">
-            </div>
-            
         </div>
     </section>
 

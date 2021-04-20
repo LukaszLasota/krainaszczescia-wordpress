@@ -39,7 +39,7 @@ import $ from 'jquery';
      *                                                  *
      ****************************************************/
     
-      $('a[href*="#"]:not([href="#"]):not([href^="#tab"]):not([href^="#collapse"])').click(function()
+      $('a[href*="#"]:not([href="#"]):not([href^="#tab"]):not([href^="#example"])').click(function()
       {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
             || location.hostname == this.hostname) 

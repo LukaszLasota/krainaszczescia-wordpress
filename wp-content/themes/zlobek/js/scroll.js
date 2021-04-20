@@ -39,7 +39,7 @@ import $ from 'jquery';
      *                                                  *
      ****************************************************/
     
-      $('a[href*="#"]:not([href="#"]):not([href^="#tab"]):not([href^="#collapse"])').click(function()
+      $('a[href*="#"]:not([href="#"]):not([href^="#tab"]):not([href^="#example"])').click(function()
       {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
             || location.hostname == this.hostname) 
@@ -56,7 +56,7 @@ import $ from 'jquery';
                 $('html,body').animate({ scrollTop: target.offset().top -140 }, scrollSpeed, scrollStyle );
             return false;
             }else{
-                $('html,body').animate({ scrollTop: target.offset().top -210 }, scrollSpeed, scrollStyle );
+                $('html,body').animate({ scrollTop: target.offset().top -270 }, scrollSpeed, scrollStyle );
                 return false;
             }
           }

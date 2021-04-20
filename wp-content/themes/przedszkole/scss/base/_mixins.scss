@@ -1,6 +1,6 @@
 @mixin paragraph($color, $font, $size, $weight, $line) {
     color: $color;
-    font-style: $font;
+    font-family: $font;
     font-size: $size;
     font-weight: $weight;
     line-height: $line;

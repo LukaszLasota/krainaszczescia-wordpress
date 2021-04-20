@@ -4,7 +4,7 @@
     margin: 0;
     position: relative;
     @media (max-width: 600px){
-            min-height: 150vh;
+            min-height: 970px;
             // z-index: 50;
             // background: url('./../images/kontakt/14.png');
             // background-position: top center;
@@ -13,7 +13,7 @@
             // border-radius: 100px 100px 0 0;
             // position: relative;
             // background: linear-gradient(to bottom, #fcab1e, #ffdc4c);
-            border-radius: 40px 40px 0 0;
+            // border-radius: 40px 40px 0 0;
             // :after{
             //     content: url('./../images/kontakt/15.png');
             //     // background: url('./../images/kontakt/14.png');
@@ -141,20 +141,26 @@
                 padding-top: 4%;
             }
         }
+        @media (max-width: 1200px){
+            .content{
+                width: 80%;
+                // padding-top: 4%;
+            }
+        }
         .content-one{
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             @media (max-width: 1200px){
                 padding-bottom: 15px;
             }
             h4{
                 text-transform: uppercase;
-                margin: 7px 0 3px;
+                margin: 10px 0 10px;
                 color: $violet;
                 font-size: 1.2rem;
-                font-style: $com;
+                font-family: $com;
                 font-weight: 400;
                 @media (max-width: 800px){
                     font-size: 1.0rem;
@@ -187,13 +193,23 @@
                     margin: 0 0 7px 20px;
                     color: $white;
                     font-size: 1.1rem;
-                    font-style: $com;
+                    font-family: $com;
                     font-weight: 300;
+                    word-wrap: break-word;
                     @media (max-width: 800px){
                         font-size: 0.9rem;
                     }
                     @media (max-width: 600px){
-                        font-size: 1.1rem;
+                        font-size: 1.0rem;
+                    }
+                }
+                .contact-small{
+                    font-size: 1.0rem;
+                    @media (max-width: 800px){
+                        font-size: 0.8rem;
+                    }
+                    @media (max-width: 600px){
+                        font-size: 0.9rem;
                     }
                 }
                 a{

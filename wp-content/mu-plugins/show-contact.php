@@ -1,4 +1,15 @@
-<?php function showContact($args = NULL){ ?>
+<?php function showContact($args = NULL){ 
+    
+if(get_current_blog_id() == 2){
+    $args['title'] = 'Przedszkole';
+    $args['paragraphOne'] = '885 755  008 ZUCHY';
+    $args['paragraphTwo'] = '885 755  007 STARSZAKI';
+}else{
+    $args['title'] = 'Żłobek';
+    $args['paragraphOne'] = '885 755  006 MALUCHY';
+    $args['paragraphTwo'] = '885 755  004 KRASNALE';
+}    
+?>
     
 <section class="contact" id="six">
     
@@ -25,16 +36,14 @@
                     </div>
                     <div class="content-one-text">
                         <p>17/2000660</p>
-                        <h4>Żłobek</h4>
-                            <p>885 755  006 MALUCHY</p>
-                            <p>885 755  004 KRASNALE</p>
-                        <h4>przedszkole</h4>
-                            <p>885 755  008 ZUCHY</p>
-                            <p>885 755  007 STARSZAKI</p>
+                        <h4><?php echo  $args['title']; $args['paragraphOne']?></h4>
+                            <p><?php echo $args['paragraphOne']?></p>
+                            <p><?php echo $args['paragraphTwo']?></p>
                         <h4>Dyrektor</h4>
-                            <p>Aneta Mikosz 733 733 311 (10.00 - 18.00)</p>
+                            <p>Aneta Mikosz 733 733 311 <span class="contact-small">(10.00 - 18.00)</span></p>
                         <h4>catering</h4>
-                            <p>885 755 003 (nie SMS) / 17/ 200 06 60 (nie SMS)</p>
+                            <p>885 755 003 (nie SMS)</p>
+                            <p>17/ 200 06 60 (nie SMS)</p>
                     </div>  
                 </div>
     

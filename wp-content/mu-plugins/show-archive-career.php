@@ -26,7 +26,7 @@ if(get_current_blog_id() == 2){
          <?php } 
         }else{ ?>
             <div class="career-no-recrutation">
-                <h3>Nie prowadzimy aktulanie rekrutacji, zapraszamy do śledzenia naszej strony</h3>
+                <h3>Nie prowadzimy aktulanie rekrutacji, zapraszamy do śledzenia naszej strony.</h3>
             </div>
         <?php } ?>
      

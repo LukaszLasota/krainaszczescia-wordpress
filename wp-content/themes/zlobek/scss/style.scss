@@ -1,10 +1,9 @@
- @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
- 
- @import "base/_variables.scss";
- @import "base/_mixins.scss";
- @import "base/_main-style";
- @import "modules/_width.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_main-style";
+@import "modules/_width.scss";
 
 @import "modules/_menu.scss";
 @import "modules/_header.scss";

@@ -6,10 +6,12 @@ function kindergarten_files(){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.a60ad1094e04412b7ea8.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.a60ad1094e04412b7ea8.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.cb6c9efb135d891137cf.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.cb6c9efb135d891137cf.css'));
     }
     
+    wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap', NULL, '1.0', true);
+
     wp_localize_script('main-kindergarten-js', 'kindergartenData', array(
         'root_url'=> get_site_url(),
         'nonce'=> wp_create_nonce('wp_rest'),
@@ -145,11 +147,11 @@ function ourHeaderUrl(){
 // add_action('login_enqueue_scripts', 'ourLoginCSS' );
 
 // function ourLoginCSS(){
-//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.a60ad1094e04412b7ea8.css'));
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.cb6c9efb135d891137cf.css'));
 //     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 // }
 
-add_filter('login_headertitle', 'ourLoginTitle');
+add_filter('login_headertext', 'ourLoginTitle');
 
 function ourLoginTitle(){
     return get_bloginfo('name');

@@ -3,7 +3,11 @@ body{
     margin: 0;
     font-size: 10px;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
+    @media (max-width: 1024px){
+        overflow: scroll;
+    }
 }
 
 img{
@@ -11,22 +15,45 @@ img{
 }
 
 .main-site{
+    height: 100vh;
     width: 100%;
     @include flex(flex, wrap);
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    @media (max-width: 1024px){
+        height: auto;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
 }
 
 .main-header{
+    // width: 100%;
+    // @include flex(flex, wrap);
+    // justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 0;
+    z-index: 50;
+    @media (max-width: 1024px){
+    position: relative;
     width: 100%;
     @include flex(flex, wrap);
     justify-content: center;
-    padding-top: 50px;
+    }
+   
     .logo{
         width: 160px;
+        z-index: 50;
+        // border: 1px solid;;
     }
 }
 .main-div{
     width: 50%;
+    // margin-top: -100px;
     // padding: 20px;
     .main-div-img{
         width: 100%;
@@ -79,9 +106,9 @@ img{
 
 @media (max-width: 1024px){
     .main-header{
-        padding-top: 40px;
+        padding: 0 0 70px;
         .logo{
-            width: 180px;
+            width: 200px;
         }
     }
     .main-div{
@@ -91,7 +118,7 @@ img{
 
 @media (max-width: 600px){
     .main-header{
-        padding-top: 30px;
+        // padding:0 0 50px;
         .logo{
             width: 120px;
         }
