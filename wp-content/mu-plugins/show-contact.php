@@ -23,7 +23,7 @@ if(get_current_blog_id() == 2){
             <div class="contact-one-img" >
                 <!-- <img src="<?php echo get_theme_file_uri('/images/kontakt/2.png'); ?>" alt=""> -->
                 <picture>
-                  <source srcset="<?php echo get_theme_file_uri('/images/kontakt/16.png'); ?>" media="(max-width: 600px)">
+                  <source srcset="<?php echo get_theme_file_uri('/images/kontakt/18.png'); ?>" media="(max-width: 600px)">
                   <img src="<?php echo get_theme_file_uri('/images/kontakt/2.png'); ?>" alt="">
                 </picture>
             </div>

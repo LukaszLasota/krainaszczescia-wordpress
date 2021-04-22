@@ -3,11 +3,11 @@
 <footer class="footer">
 
     <div class="footer-img">       
-        <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">
-        <!-- <picture>
-            <source srcset="<?php echo get_theme_file_uri('/images/kontakt/16.png'); ?>" media="(max-width: 600px)">
+        <!-- <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt=""> -->
+        <picture>
+            <source srcset="<?php echo get_theme_file_uri('/images/kontakt/19.png'); ?>" media="(max-width: 600px)">
             <img src="<?php echo get_theme_file_uri('/images/kontakt/1.png'); ?>" alt="">
-        </picture>   -->
+        </picture>  
     </div>
 
 <div class="site-footer">

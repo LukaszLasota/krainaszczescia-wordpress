@@ -29,8 +29,9 @@
     }
     .logo{
       padding: 0 15px;
+      margin-top: 10px;
       img{
-        width: 130px;
+        width: 110px;
       }
     }
   }
@@ -53,7 +54,7 @@
         font-size: 1.0rem;
         text-transform: uppercase;
         color: $white;
-        padding: 15px 25px;
+        padding: 10px 25px;
         display: flex;
         justify-content: center;
         font-weight: normal;
@@ -66,11 +67,11 @@
     justify-content: center;
     align-items: center;
     .login-btn{
-      width: 120px;
+      width: 100px;
     }
     .login-avatar{
       width: 55px;
-      padding: 5px 15px;
+      padding: 0px 15px;
     }
   }
 
@@ -97,9 +98,10 @@
         padding: 10px 5px;
       }
       .logo{
-        padding: 0 15px;
+        padding: 0 5px;
+        margin-top: 5px;
         img{
-          width: 100px;
+          width: 85px;
         }
       }
     }
@@ -110,16 +112,16 @@
         padding: 0;
         a{
           font-size: 1.0rem;
-          padding: 15px 10px;
+          padding: 10px 10px;
         }
       }
     }
     .menu-login{
       .login-btn{
-        width: 95px;
+        width: 85px;
       }
       .login-avatar{
-        width: 45px;
+        width: 40px;
         padding: 5px 15px;
       }
     }
@@ -133,7 +135,8 @@
         padding: 0px 5px;
       }
       .logo{
-        padding: 0 15px;
+        margin-top: 5px;
+        padding: 0 5px;
         img{
           width: 70px;
         }
@@ -152,10 +155,10 @@
     }
     .menu-login{
       .login-btn{
-        width: 80px;
+        width: 70px;
       }
       .login-avatar{
-        width: 30px;
+        width: 25px;
         padding: 0px 15px;
       }
     }
@@ -275,7 +278,7 @@
       width: 100%;
       background-color: $white;
       position: absolute;
-      top: 90px;
+      top: 60px;
       left: 0;
       visibility: hidden;
       transform: translateX(-100%);
@@ -323,7 +326,7 @@
       padding: 20px;
     }
     .navigation {
-      top: 75px;
+      top: 65px;
       .navigation-item {
         padding: 0px;
       a {
