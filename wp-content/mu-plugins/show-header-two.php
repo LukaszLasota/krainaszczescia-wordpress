@@ -5,9 +5,11 @@ function showHeaderNew($args = NULL){
 if(get_current_blog_id() == 2){
     $args['alt'] = 'Strona główna Przedszkola Kraina Szczęścia';
     $args['title'] = 'Przedszkole Kraina Szczęścia';
+    $args['url'] = '/przedszkole';
 }else{
     $args['alt'] = 'Strona główna Żłobek Kraina Szczęścia';
     $args['title'] = 'Złobek Kraina Szczęścia';
+    $args['url'] = '/zlobek';
 }
 
 ?>
@@ -25,7 +27,7 @@ if(get_current_blog_id() == 2){
             </div>
 
           <h1 class="logo" title="<?php echo $args['title']; ?>">
-              <a href="/">
+              <a href="<?php echo $args['url'] ?>">
                 <picture>
                   <source srcset="<?php echo get_theme_file_uri('/images/menu/logo.png'); ?>" media="(max-width: 1024px)">
                   <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">
@@ -40,9 +42,9 @@ if(get_current_blog_id() == 2){
               <li class="navigation-item">
                 <a href="https://www.facebook.com/krainaszczescia.edu" target="_blank">aktualności</a>
               </li>
-              <li class="navigation-item"><a href="/#three">oferta</a></li>
-              <li class="navigation-item"><a href="/#four">opłaty</a></li>
-              <li class="navigation-item"><a href="/#five">rekrutacja</a></li>
+              <li class="navigation-item"><a href="<?php echo site_url( '/#three'); ?>">oferta</a></li>
+              <li class="navigation-item"><a href="<?php echo site_url( '/#four'); ?>">opłaty</a></li>
+              <li class="navigation-item"><a href="<?php echo site_url( '/#five'); ?>">rekrutacja</a></li>
               <li class="navigation-item"><a href="<?php echo site_url( '/dla-rodzica'); ?>">dla rodzica</a></li>
               <li class="navigation-item">
                 <a href="<?php echo get_post_type_archive_link('kariera'); ?>">kariera</a></li>

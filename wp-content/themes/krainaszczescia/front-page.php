@@ -12,7 +12,7 @@ get_header();
     </div>
     <div class="main-div">
         <div class="main-div-img">
-            <a href="https://zlobek.krainaszczescia.edu.pl/">
+            <a href="https://krainaszczescia.edu.pl/zlobek">
                 <img src="<?php echo get_theme_file_uri('/images/1.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/2.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/3.png'); ?>" alt="">
@@ -23,7 +23,7 @@ get_header();
     </div>
     <div class="main-div">
         <div class="main-div-img">  
-            <a href="https://przedszkole.krainaszczescia.edu.pl/">
+            <a href="https://krainaszczescia.edu.pl/przedszkole">
                 <img src="<?php echo get_theme_file_uri('/images/5.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/6.png'); ?>" alt="">
                 <img class="abs" src="<?php echo get_theme_file_uri('/images/7.png'); ?>" alt="">

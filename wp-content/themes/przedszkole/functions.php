@@ -1,13 +1,12 @@
 <?php 
-
 function kindergarten_files(){
        
     if(strstr($_SERVER['SERVER_NAME'], 'krainaszczescia.local')){
         wp_enqueue_script('main-kindergarten-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     }else{
         wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/vendors~scripts.751709b6b29eb3320280.js'), NULL, '1.0', true);
-        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.ae7390124755fc8bf838.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ae7390124755fc8bf838.css'));
+        wp_enqueue_script('main-kindergarten-js', get_theme_file_uri('/bundled-assets/scripts.540d28d4ef50b6ff136c.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.540d28d4ef50b6ff136c.css'));
     }
     
     wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap', NULL, '1.0', true);
@@ -147,7 +146,7 @@ function ourHeaderUrl(){
 // add_action('login_enqueue_scripts', 'ourLoginCSS' );
 
 // function ourLoginCSS(){
-//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ae7390124755fc8bf838.css'));
+//     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.540d28d4ef50b6ff136c.css'));
 //     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 // }
 

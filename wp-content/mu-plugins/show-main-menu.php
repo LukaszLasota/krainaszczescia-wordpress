@@ -3,9 +3,11 @@
     if(get_current_blog_id() == 2){
         $args['alt'] = 'Strona główna Przedszkola Kraina Szczęścia';
         $args['title'] = 'Przedszkole Kraina Szczęścia';
+        $args['url'] = '/przedszkole';
     }else{
         $args['alt'] = 'Strona główna Żłobek Kraina Szczęścia';
         $args['title'] = 'Złobek Kraina Szczęścia';
+        $args['url'] = '/zlobek';
     }
     
 ?>
@@ -24,7 +26,7 @@
             </div>
 
             <h1 class="logo" title="<?php echo $args['title']; ?>">
-              <a href="/">
+              <a href="<?php echo $args['url'] ?>">
                 <picture>
                   <source srcset="<?php echo get_theme_file_uri('/images/menu/logo.png'); ?>" media="(max-width: 1024px)">
                   <img src="<?php echo get_theme_file_uri('/images/menu/logo-white.png'); ?>" alt="<?php echo $args['alt']; ?>">

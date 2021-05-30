@@ -1,0 +1,13 @@
+.position-not-found{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    h2{
+        @include paragraph($black, $com, 2.0rem, normal, 130%);
+        padding: 100px 0 150px;
+        @media (max-width: 800px){
+            @include paragraph($black, $com, 1.5rem, normal, 130%);
+           
+        }
+    }
+}
